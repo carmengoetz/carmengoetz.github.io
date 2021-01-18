@@ -1,15 +1,15 @@
 <template>
     <div class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img id="brand" src="resources/images/logos/carmen-goetz-logo.png" width="300" alt="carmen goetz"/></a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img id="brand" src="../assets/logos/carmen-goetz-logo.png" width="300" alt="carmen goetz"/></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
         </button>
         <div id="navbarResponsive" class="collapse navbar-collapse">
           <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <router-link class="nav-link js-scroll-trigger" v-for="page in pages" :key="page.name" :to="page.path">{{page.name}}</router-link>
+            <li class="nav-item" v-for="page in pages" :key="page.name">
+              <router-link class="nav-link js-scroll-trigger" :to="page.path">{{page.name}}</router-link>
             </li>
           </ul>
         </div>
@@ -18,20 +18,6 @@
 </template>
 
 <script>
-(function($) {
-// Collapse Navbar
-    var navbarCollapse = function() {
-        if ($("#mainNav").offset().top > 100) {
-            $("#mainNav").addClass("navbar-shrink");
-        } else {
-            $("#mainNav").removeClass("navbar-shrink");
-        }
-    };
-    // Collapse now if page is not at top
-    navbarCollapse();
-    // Collapse the navbar when page is scrolled
-    $(window).scroll(navbarCollapse);
-});
 
 export default {
   name: 'navigation',
