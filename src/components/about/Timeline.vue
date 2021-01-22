@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Panel from '../about/Panel.vue'
+import Panel from '@/components/about/Panel.vue'
 
 export default {
   name: 'timeline',

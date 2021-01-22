@@ -6,8 +6,10 @@
 
         </div>
 
-        <a v-if="showResume" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="resources/carmen-resume-v2.pdf"
+    <div v-if="showResume">
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="resources/carmen-resume-v2.pdf"
            target="_blank">View My Resume</a>
+    </div>
     </div>
 </header>
 </template>
@@ -50,6 +52,10 @@ export default {
 @media (min-width: 768px) {
     .about {
         background-image: url("../assets/apple-apple-devices-business-205316.jpg");
+    }
+    .skills {
+        margin-top: 100px;
+        background-image: url("../assets/computer-desk-electronics-238118.jpg");
     }
     .masthead {
         padding-top: 0;

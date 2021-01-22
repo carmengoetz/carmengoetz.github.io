@@ -1,36 +1,36 @@
 <template>
   <div class="about">
-<PageHeader 
-  :heading=heading
-  :page=page
-  :showResume=true
->
-</PageHeader>
+    <PageHeader 
+      :heading=heading
+      :page=page
+      :showResume=true
+    >
+    </PageHeader>
 
-<section id="about">
-    <div class="container">
-        <div class="row hidden">
-            <div class="col-lg-12 text-center ">
-                <h2 class="section-heading text-uppercase">About Me</h2>
-            </div>
-        </div>
-        <div class="row hidden">
-            <div class="col-lg-12 text-center ">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/about/8E6FB7C4-42F5-441C-B421-1C46F3CBA6D5.jpg" alt="">
+    <section id="about">
+        <div class="container">
+            <div class="row hidden">
+                <div class="col-lg-12 text-center ">
+                    <h2 class="section-heading text-uppercase">About Me</h2>
                 </div>
             </div>
-        </div>
-        <div class="row hidden">
-            <div class="col-lg-8 mx-auto text-center">
-                <h3 class="section-subheading text-light">I am a full stack software developer at 7shifts 
-                    in Saskatoon. I am a technology enthusiast, lover of animals and nature, and a Nintendo 
-                    fiend! If you want to learn more, scroll for a brief description of my past five years.</h3>
+            <div class="row hidden">
+                <div class="col-lg-12 text-center ">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="../assets/about/8E6FB7C4-42F5-441C-B421-1C46F3CBA6D5.jpg" alt="">
+                    </div>
+                </div>
             </div>
+            <div class="row hidden">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h3 class="section-subheading text-light">I am a full stack software developer at 7shifts 
+                        in Saskatoon. I am a technology enthusiast, lover of animals and nature, and a Nintendo 
+                        fiend! If you want to learn more, scroll for a brief description of my past five years.</h3>
+                </div>
+            </div>
+          <Timeline></Timeline>
         </div>
-      <Timeline></Timeline>
-    </div>
-</section>
+    </section>
   </div>
 </template>
 

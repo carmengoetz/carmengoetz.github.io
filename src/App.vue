@@ -1,4 +1,4 @@
-<template>
+<template id="page-top">
   <Navigation></Navigation>
   <div class="container" >
     <router-view/>
