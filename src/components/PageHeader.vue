@@ -57,6 +57,10 @@ export default {
         margin-top: 100px;
         background-image: url("../assets/computer-desk-electronics-238118.jpg");
     }
+    .experience {
+        margin-top: 100px;
+        background-image: url("../assets/coffee-computer-cup-604898.jpeg");
+    }
     .masthead {
         padding-top: 0;
         background-repeat: no-repeat;
