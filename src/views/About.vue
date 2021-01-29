@@ -9,12 +9,12 @@
 
     <section id="about">
         <div class="container">
-            <div class="row hidden">
+            <div class="row ">
                 <div class="col-lg-12 text-center ">
                     <h2 class="section-heading text-uppercase">About Me</h2>
                 </div>
             </div>
-            <div class="row hidden">
+            <div class="row ">
                 <div class="col-lg-8 mx-auto text-center">
                     <h3 class="section-subheading text-light">I am a full stack software developer at 7shifts 
                         in Saskatoon. I am a technology enthusiast, lover of animals and nature, and a Nintendo 

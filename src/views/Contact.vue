@@ -9,13 +9,13 @@
 
     <section id="contact">
         <div class="container">
-            <div class="row hidden">
+            <div class="row ">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading text-uppercase">Contact Me</h2>
                     <h3 class="section-subheading text-muted">Get in touch on me for any inquiries you may have!</h3>
                 </div>
             </div>
-            <div class="row hidden">
+            <div class="row ">
                 <div class="col-lg-12">
                     <form id="contactForm" name="sentMessage" novalidate="novalidate">
                         <div class="row">

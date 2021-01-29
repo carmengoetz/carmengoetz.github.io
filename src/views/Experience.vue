@@ -10,13 +10,13 @@
     <!-- experience Grid -->
     <section id="experience">
         <div class="container">
-            <div class="row hidden">
+            <div class="row ">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading text-uppercase">experience</h2>
                     <h3 class="section-subheading text-light">Projects, personal or business, completed or in progress</h3>
                 </div>
             </div>
-            <div class="row hidden">
+            <div class="row ">
               <Item v-for="item in projects" :key=item.index
                 :modal=item.modal
                 :image=item.image

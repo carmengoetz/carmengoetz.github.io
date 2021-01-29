@@ -15,7 +15,7 @@
         </div>
       </div>
 
-      <div v-for="skills in skills" :key=skills.index class="row text-center hidden skill-row">
+      <div v-for="skills in skills" :key=skills.index class="row text-center  skill-row">
           <Skill v-for="skill in skills" :key="skill.title"
             :title=skill.title
             :description=skill.description

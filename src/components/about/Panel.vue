@@ -1,5 +1,5 @@
 <template>
-    <li class="hidden" :class="{inverted: inverted}">
+    <li class="" :class="{inverted: inverted}">
         <div class="timeline-image">
             <img class="rounded-circle img-fluid" :src=image alt="tbd">
         </div>
