@@ -28,7 +28,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import PageHeader from '@/components/PageHeader.vue'
 import Skill from '@/components/skills/Skill.vue'
 

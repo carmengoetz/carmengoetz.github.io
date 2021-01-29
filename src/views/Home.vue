@@ -3,15 +3,22 @@
     <PageHeader 
       :heading=heading
       :page=page
-      :showResume=false
+      :showResume=true
     >
     </PageHeader>
 
-    <section id="about">
+    <section id="home">
         <div class="container">
             <div class="row hidden">
                 <div class="col-lg-12 text-center ">
-                    <h2 class="section-heading text-uppercase">About Me</h2>
+                    <h2 class="section-heading text-uppercase">Carmen Goetz</h2>
+                </div>
+            </div>
+            <div class="row hidden">
+                <div class="col-lg-12 text-center ">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="../assets/about/8E6FB7C4-42F5-441C-B421-1C46F3CBA6D5.jpg" alt="">
+                    </div>
                 </div>
             </div>
             <div class="row hidden">
@@ -21,7 +28,6 @@
                         fiend! If you want to learn more, scroll for a brief description of my past five years.</h3>
                 </div>
             </div>
-          <Timeline></Timeline>
         </div>
     </section>
   </div>
@@ -29,17 +35,15 @@
 
 <script>
 import PageHeader from '@/components/PageHeader.vue'
-import Timeline from '@/components/about/Timeline.vue'
 
 export default {
-  name: 'About',
+  name: 'Home',
   components: {
     PageHeader,
-    Timeline
   },
   data: () => {
     return {
-      heading: 'About',
+      heading: 'Software Developer',
       page: 'about',
       showResume: true
     }
@@ -50,13 +54,13 @@ export default {
 
 <style scoped>
 
-#about {
+#home {
     background-color: #202326;
     padding-top: -50px;
     margin-top: 50px;
 }
 
-#about > h4, h2, h5 {
+#home > h4, h2, h5 {
     color: #9DC5CA;
 }
 

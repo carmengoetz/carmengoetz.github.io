@@ -1,9 +1,11 @@
-<template id="page-top">
+<template>
+<div id="page-top">
   <Navigation></Navigation>
   <div class="container" >
     <router-view/>
   </div>
   <Footer></Footer>
+</div>
 </template>
 
 <script>

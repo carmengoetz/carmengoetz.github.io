@@ -24,7 +24,8 @@ export default {
   data: () => {
     return {
       pages: [
-        { path: '/about', name: 'About', exact: true },
+        { path: '/', name: 'Home', exact: true },
+        { path: '/about', name: 'About', exact: false },
         { path: '/skills', name: 'Skills', exact: false },
         { path: '/experience', name: 'Experience', exact: false },
         { path: '/contact', name: 'Contact', exact: false },
