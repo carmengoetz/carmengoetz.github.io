@@ -1,23 +1,33 @@
 <template>
-    <div class="col-md-4 col-sm-6 experience-item">
-        <a class="experience-link" data-toggle="modal" :href="`#${modal.id}`">
-            <div class="experience-hover">
-                <div class="experience-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                </div>
-            </div>
-            <img class="img-fluid" :src="require(`@/assets/experience/${image.name}`)" :alt="image.alt">
-        </a>
-        <div class="experience-caption">
-            <h4>{{client}}</h4>
-            <p class="text-muted">{{category}}</p>
+  <div class="col-md-4 col-sm-6 experience-item">
+    <a
+      class="experience-link"
+      data-toggle="modal"
+      :href="`#${modal.id}`"
+    >
+      <div class="experience-hover">
+        <div class="experience-hover-content">
+          <i class="fas fa-plus fa-3x" />
         </div>
+      </div>
+      <img
+        class="img-fluid"
+        :src="require(`@/assets/experience/${image.name}`)"
+        :alt="image.alt"
+      >
+    </a>
+    <div class="experience-caption">
+      <h4>{{ client }}</h4>
+      <p class="text-muted">
+        {{ category }}
+      </p>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'item',
+    name: 'Item',
     props: ['modal', 'image', 'client', 'category']
 }
 </script>

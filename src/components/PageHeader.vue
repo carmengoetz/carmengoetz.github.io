@@ -1,23 +1,42 @@
 <template>
-    <header class="masthead container animate-in" :class="page">
+  <header
+    class="masthead container "
+    :class="$route.meta.class"
+  >
     <div class="container-fluid">
-        <div class="intro-text">
-            <div class="intro-heading ">{{heading}}<span class="blinking-cursor">|</span></div>
-
+      <div class="intro-text">
+        <div class="intro-heading ">
+          {{ $route.name }}<span class="blinking-cursor">|</span>
         </div>
+      </div>
 
-    <div v-if="showResume">
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="resources/carmen-resume-v2.pdf"
-           target="_blank">View My Resume</a>
+      <div v-if="$route.meta.showResume">
+        <a
+          class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+          href="resources/carmen-resume-v2.pdf"
+          target="_blank"
+        >View My Resume</a>
+      </div>
+
+      <div v-if="$route.meta.notFound" >
+        <br>
+        <router-link
+                class="navbar-brand js-scroll-trigger" 
+                :to="{
+                  name: 'Software Developer',
+                  hash: '#page-top'
+                }"
+              >
+          Back to Safety
+        </router-link>
+      </div>
     </div>
-    </div>
-</header>
+  </header>
 </template>
 
 <script>
 export default {
-    name: 'page-header',
-    props: ['heading', 'page', 'showResume'],
+    name: 'PageHeader',
 }
 </script>
 

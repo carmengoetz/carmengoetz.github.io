@@ -1,24 +1,26 @@
 <template>
-<div class="row">
+  <div class="row">
     <div class="col-lg-12">
-        <ul class="timeline">
-            <Panel v-for="panel in panels" :key="panel.index"
-                :year=panel.year
-                :heading=panel.heading
-                :image=panel.image
-                :description=panel.description
-                :inverted=panel.inverted> 
-            </Panel>
-        </ul>
+      <ul class="timeline">
+        <Panel
+          v-for="panel in panels"
+          :key="panel.index"
+          :year="panel.year"
+          :heading="panel.heading"
+          :image="panel.image"
+          :description="panel.description"
+          :inverted="panel.inverted"
+        />
+      </ul>
     </div>
-</div>
+  </div>
 </template>
 
 <script>
 import Panel from '@/components/about/Panel.vue'
 
 export default {
-  name: 'timeline',
+  name: 'Timeline',
   components: {
       Panel
   },

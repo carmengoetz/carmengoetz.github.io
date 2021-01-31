@@ -1,28 +1,35 @@
 <template>
   <div class="skills">
     <PageHeader 
-      :heading=heading
-      :page=page
-      :showResume=false
-      >
-    </PageHeader>
-    <section id=skills>
-    <div class="container">
-      <div class="row ">
-        <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Skills</h2>
-            <h3 class="section-subheading text-light"></h3>
+      :heading="heading"
+      :page="page"
+      :show-resume="false"
+    />
+    <section id="skills">
+      <div class="container">
+        <div class="row ">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">
+              Skills
+            </h2>
+            <h3 class="section-subheading text-light" />
+          </div>
+        </div>
+
+        <div
+          v-for="skills in skills"
+          :key="skills.index"
+          class="row text-center  skill-row"
+        >
+          <Skill
+            v-for="skill in skills"
+            :key="skill.title"
+            :title="skill.title"
+            :description="skill.description"
+            :icon="skill.icon"
+          />
         </div>
       </div>
-
-      <div v-for="skills in skills" :key=skills.index class="row text-center  skill-row">
-          <Skill v-for="skill in skills" :key="skill.title"
-            :title=skill.title
-            :description=skill.description
-            :icon=skill.icon>
-          </Skill>
-      </div>
-    </div>
     </section>
   </div>
 </template>

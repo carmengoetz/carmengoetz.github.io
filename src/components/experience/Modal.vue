@@ -1,58 +1,115 @@
 <template>
-    <div class="experience-modal modal fade" :id="id" tabindex="-1" role="dialog" aria-hidden="true">
+  <div
+    :id="id"
+    class="experience-modal modal fade"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
     <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <div class="modal-body">
-                            <h2 class="text-uppercase">{{client}}</h2>
-                            <p class="item-intro text-muted">{{project}}</p>
-                            <div v-if="carousel" :id="carousel.id" class="carousel slide" data-ride="carousel">
-                                <div v-for="item in carousel.items" :key="item.index" class="carousel-inner">
-                                    <div class="carousel-item" :class="{active: item.active}">
-                                        <img class="d-block w-100" :src="require(`@/assets/experience/${item.image}`)" :alt="item.alt">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <p class="text-muted">{{item.description}}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class="carousel-control-prev" :href="`#${carousel.id}`" role="button" data-slide="prev">
-                                    <span class="fas fa-angle-left" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" :href="`#${carousel.id}`" role="button" data-slide="next">
-                                    <span class="fas fa-angle-right" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-                            <img v-else class="img-fluid d-block mx-auto" :src="require(`@/assets/experience/${image.name}`)" :alt="image.alt">
-                            <slot></slot>
-                            <ul class="list-inline">
-                                <li>Date: {{date}}</li>
-                                <li>Client: {{client}}</li>
-                                <li>Category: {{category}}</li>
-                            </ul>
-                            <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                <i class="fas fa-times"></i>
-                                Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="modal-content">
+        <div
+          class="close-modal"
+          data-dismiss="modal"
+        >
+          <div class="lr">
+            <div class="rl" />
+          </div>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">
+                  {{ client }}
+                </h2>
+                <p class="item-intro text-muted">
+                  {{ project }}
+                </p>
+                <div
+                  v-if="carousel"
+                  :id="carousel.id"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <div
+                    v-for="item in carousel.items"
+                    :key="item.index"
+                    class="carousel-inner"
+                  >
+                    <div
+                      class="carousel-item"
+                      :class="{active: item.active}"
+                    >
+                      <img
+                        class="d-block w-100"
+                        :src="require(`@/assets/experience/${item.image}`)"
+                        :alt="item.alt"
+                      >
+                      <div class="carousel-caption d-none d-md-block">
+                        <p class="text-muted">
+                          {{ item.description }}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    :href="`#${carousel.id}`"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      class="fas fa-angle-left"
+                      aria-hidden="true"
+                    />
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    :href="`#${carousel.id}`"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      class="fas fa-angle-right"
+                      aria-hidden="true"
+                    />
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <img
+                  v-else
+                  class="img-fluid d-block mx-auto"
+                  :src="require(`@/assets/experience/${image.name}`)"
+                  :alt="image.alt"
+                >
+                <slot />
+                <ul class="list-inline">
+                  <li>Date: {{ date }}</li>
+                  <li>Client: {{ client }}</li>
+                  <li>Category: {{ category }}</li>
+                </ul>
+                <button
+                  class="btn btn-primary"
+                  data-dismiss="modal"
+                  type="button"
+                >
+                  <i class="fas fa-times" />
+                  Close Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'modal',
+    name: 'Modal',
     props: ['id', 'project', 'client', 'image', 'carousel', 'description', 'category', 'date']
 }
 </script>

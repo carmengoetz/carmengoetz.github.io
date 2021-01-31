@@ -1,40 +1,86 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Skills from '../views/Skills.vue'
-import Experience from '../views/Experience.vue'
-import Contact from '../views/Contact.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'Carmen Goetz',
-    component: Home
-  },
+    name: 'Software Developer',
+    component: () =>
+      import(/* webpackChunkName: "Home" */ "../views/Home.vue"),
+    meta: {
+      class: 'about',
+      showResume: true
+    }  
+    },
   {
     path: '/about',
     name: 'About',
-    component: About
+    component: () =>
+      import(/* webpackChunkName: "About" */ "../views/About.vue"),
+    meta: {
+      class: 'about',
+      showResume: false
+    }  
   },
   {
     path: '/skills',
     name: 'Skills',
-    component: Skills
-  },
+    component: () =>
+      import(/* webpackChunkName: "Skills" */ "../views/Skills.vue"),
+    meta: {
+      class: 'skills',
+      showResume: false
+    }  
+    },
   {
     path: '/experience',
     name: 'Experience',
-    component: Experience
-  },
+    component: () =>
+      import(/* webpackChunkName: "Experience" */ "../views/Experience.vue"),
+    meta: {
+      class: 'experience',
+      showResume: false
+    }  
+    },
   {
     path: '/contact',
     name: 'Contact',
-    component: Contact
+    component: () =>
+      import(/* webpackChunkName: "Contact" */ "../views/Contact.vue"),
+    meta: {
+      class: 'contact',
+      showResume: false
+    }  
   },
+  {
+    path: '/:catchAll(.*)',
+    name: '404',
+    component: () =>
+      import(/* webpackChunkName: "NotFound" */ "../views/404.vue"),
+      meta: {
+        class: 'about',
+        showResume: false,
+        notFound: true
+      } 
+  }
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      const position = {};
+      if (to.hash) {
+        position.selector = to.hash;
+        if (document.querySelector(to.hash)) {
+          return position;
+        }
+
+        return false;
+      }
+    }
+  },
   routes
 })
 

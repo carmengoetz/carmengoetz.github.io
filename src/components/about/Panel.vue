@@ -1,23 +1,34 @@
 <template>
-    <li class="" :class="{inverted: inverted}">
-        <div class="timeline-image">
-            <img class="rounded-circle img-fluid" :src=image alt="tbd">
-        </div>
-        <div class="timeline-panel">
-            <div class=" timeline-heading ">
-                <h4>{{year}}</h4>
-                <h5 class="subheading">{{heading}}</h5>
-            </div>
-            <div class=" timeline-body ">
-                <p class="text-light">{{description}}</p>
-            </div>
-        </div>
-    </li>
+  <li
+    class=""
+    :class="{inverted: inverted}"
+  >
+    <div class="timeline-image">
+      <img
+        class="rounded-circle img-fluid"
+        :src="image"
+        alt="tbd"
+      >
+    </div>
+    <div class="timeline-panel">
+      <div class=" timeline-heading ">
+        <h4>{{ year }}</h4>
+        <h5 class="subheading">
+          {{ heading }}
+        </h5>
+      </div>
+      <div class=" timeline-body ">
+        <p class="text-light">
+          {{ description }}
+        </p>
+      </div>
+    </div>
+  </li>
 </template>
 
 <script>
 export default {
-    name: 'panel',
+    name: 'Panel',
     props: ['year', 'heading', 'image', 'description', 'inverted']
 }
 </script>

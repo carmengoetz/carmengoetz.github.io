@@ -1,36 +1,48 @@
 <template>
-    <div class="container footer">
-        <div class="row">
-            <div class="col-md-4">
-                <span class="copyright">Copyright &copy; Carmen Goetz 2019</span>
-            </div>
-            <div class="col-md-4">
-                <ul class="list-inline social-buttons">
-                    <li class="list-inline-item">
-                        <a href="https://linkedin.com/in/carmengoetz/" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.facebook.com/carmen.goetz" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/carmenbgoetz" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://github.com/carmengoetz" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4"></div>
-        </div>
+  <div class="container footer">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">Copyright &copy; Carmen Goetz 2019</span>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+            <a
+              href="https://linkedin.com/in/carmengoetz/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in" />
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://www.facebook.com/carmen.goetz"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-f" />
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://www.instagram.com/carmenbgoetz"
+              target="_blank"
+            >
+              <i class="fab fa-instagram" />
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://github.com/carmengoetz"
+              target="_blank"
+            >
+              <i class="fab fa-github" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4" />
     </div>
+  </div>
 </template>
 
 <script>
