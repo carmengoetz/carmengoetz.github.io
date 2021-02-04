@@ -1,6 +1,5 @@
 <template>
   <div
-    id="mainNav"
     class="navbar navbar-expand-lg fixed-top"
   >
     <div class="container">
@@ -12,22 +11,22 @@
               }"
             >
         <img
-        id="brand"
         src="../assets/logos/carmen-goetz-logo.png"
         width="300"
         alt="carmen goetz">
       </router-link>
-      <button
+
+      <div v-on:click="openMobileNav()" id="burger"
         class="navbar-toggler navbar-toggler-right"
-        type="button"
         data-toggle="collapse"
         data-target="#navbarResponsive"
         aria-controls="navbarResponsive"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars" />
-      </button>
+        aria-label="Toggle navigation">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
       <div
         id="navbarResponsive"
         class="collapse navbar-collapse"
@@ -39,7 +38,7 @@
             class="nav-item"
           >
             <router-link
-              class="nav-link js-scroll-trigger" 
+              class="nav-link" 
               :to="{
                 name: page.name,
                 hash: '#page-top'
@@ -71,32 +70,27 @@ export default {
   methods: {
     getTarget: function (item) {
       return item.newTab === false ? '' : '_blank'
-    }
+    },
+    openMobileNav() {
+      const burger = document.getElementById('burger')
+      burger.classList.toggle('toggle')  
+    },
   }
 }
 </script>
 
 <style scoped>
-#mainNav {
+.navbar {
     background-color: white;
 }
 
-.navbar-toggler {
-    font-size: 40px;
-    right: 0;
-    padding: 13px;
-    color: #265F65;
-    border: 0;
-    background-color: white;
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
 
 .navbar-brand {
     color: #265F65;
     font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-.router-link-exact-active, .navbar-brand:focus, .navbar-brand:hover {
+.router-link-exact-active, .nav-link:hover, .navbar-brand:focus, .navbar-brand:hover {
     color: #265F65 !important;
 }
 
@@ -109,12 +103,40 @@ export default {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #265F65;
+#burger {
+  display: block;
+}
+
+.line1, .line2, .line3 {
+  width: 30px;
+  height: 3px;
+  margin: 8px;
+  background-color: #265F65;
+  transition: all 0.3s ease-in;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-9px, 10px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 @media (min-width: 992px) {
-    #mainNav {
+    .navbar {
         padding-top: 25px;
         padding-bottom: 25px;
         -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -122,23 +144,27 @@ export default {
         border: none;
         background-color: transparent;
     }
-    #mainNav .navbar-brand {
+    .navbar-brand {
         font-size: 1.75em;
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
     }
 
-    #mainNav .navbar-nav .nav-item .nav-link {
+    .nav-link {
         padding: 1.1em 1em !important;
     }
-    #mainNav.navbar-shrink {
+    .navbar-shrink {
         padding-top: 0;
         padding-bottom: 0;
         background-color: white;
     }
-    #mainNav.navbar-shrink .navbar-brand {
+    .navbar-shrink .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
+    }
+    #burger {
+      display: none;
+      cursor: pointer;
     }
 }
 </style>

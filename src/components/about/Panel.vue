@@ -1,8 +1,5 @@
 <template>
-  <li
-    class=""
-    :class="{inverted: inverted}"
-  >
+  <li :class="{inverted: inverted}">
     <div class="timeline-image">
       <img
         class="rounded-circle img-fluid"

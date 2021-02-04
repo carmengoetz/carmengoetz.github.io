@@ -19,7 +19,7 @@ export default {
   components: {
     Navigation,
     Footer
-  }
+  },
 }
 
 </script>
@@ -195,8 +195,8 @@ img::-moz-selection {
 .component-fade-leave-to {
   opacity: 0;
 }
-/*
-.fade-in-element {
+
+/* .fade-in-element {
     animation: fade-in 3s;
 }
 

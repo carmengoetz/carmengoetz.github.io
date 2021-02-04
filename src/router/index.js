@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import NotFound from '../views/NotFound.vue'
 
 const routes = [
   {
@@ -53,9 +54,8 @@ const routes = [
   },
   {
     path: '/:catchAll(.*)',
-    name: '404',
-    component: () =>
-      import(/* webpackChunkName: "NotFound" */ "../views/404.vue"),
+    name: 'NotFound',
+    component: NotFound,
       meta: {
         class: 'about',
         showResume: false,

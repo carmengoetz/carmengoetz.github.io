@@ -8,7 +8,7 @@
 import PageHeader from '@/components/PageHeader.vue'
 
 export default {
-  name: 'FourOhFour',
+  name: 'NotFound',
   components: {
     PageHeader,
   },
@@ -16,13 +16,13 @@ export default {
 </script>
 
 <style scoped>
-#about {
+.about {
     background-color: #202326;
     padding-top: -50px;
     margin-top: 50px;
 }
 
-#about > h4, h2, h5 {
+.about > h4, h2, h5 {
     color: #9DC5CA;
 }
 </style>
