@@ -196,6 +196,11 @@ img::-moz-selection {
   opacity: 0;
 }
 
+.fade-in {
+    opacity: 0;
+    transition: 3s all ease-in-out;
+}
+
 /* .fade-in-element {
     animation: fade-in 3s;
 }

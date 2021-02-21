@@ -15,7 +15,7 @@
           <div class="col-lg-12 text-center ">
             <div class="team-member">
               <img
-                class="mx-auto rounded-circle"
+                class="mx-auto rounded-circle fade-in"
                 src="../assets/about/8E6FB7C4-42F5-441C-B421-1C46F3CBA6D5.jpg"
                 alt=""
               >
@@ -38,12 +38,16 @@
 
 <script>
 import PageHeader from '@/components/PageHeader.vue'
+import { fadeInElements } from '@/js/animations.js'
 
 export default {
   name: 'Home',
   components: {
     PageHeader,
   },
+  setup () {
+    return fadeInElements();
+  }
 }
 </script>
 
