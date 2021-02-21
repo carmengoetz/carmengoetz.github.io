@@ -7,7 +7,6 @@
               class="navbar-brand js-scroll-trigger" 
               :to="{
                 name: 'Software Developer',
-                hash: '#page-top'
               }"
             >
         <img
@@ -41,7 +40,6 @@
               class="nav-link" 
               :to="{
                 name: page.name,
-                hash: '#page-top'
               }"
             >
               {{ page.name }}

@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import NotFound from '../views/NotFound.vue'
 
 const routes = [
   {
@@ -11,7 +10,7 @@ const routes = [
       class: 'about',
       showResume: true
     }  
-    },
+  },
   {
     path: '/about',
     name: 'About',
@@ -53,33 +52,29 @@ const routes = [
     }  
   },
   {
-    path: '/:catchAll(.*)',
+    path: '/not_found',
     name: 'NotFound',
-    component: NotFound,
-      meta: {
-        class: 'about',
-        showResume: false,
-        notFound: true
-      } 
+    component: () =>
+      import(/* webpackChunkName: "NotFound" */ "../views/NotFound.vue"),
+    meta: {
+      class: 'about',
+      showResume: false
+    }  
+  },
+  {
+    path: '/:catchAll(.*)',
+    redirect: '/'
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  scrollBehavior(to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition;
-    } else {
-      const position = {};
-      if (to.hash) {
-        position.selector = to.hash;
-        if (document.querySelector(to.hash)) {
-          return position;
-        }
-
-        return false;
-      }
-    }
+  scrollBehavior() {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({ top: 0 })
+      }, 1000)
+    })
   },
   routes
 })

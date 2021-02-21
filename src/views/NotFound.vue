@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+    <div>sup</div>
     <PageHeader />
   </div>
 </template>
