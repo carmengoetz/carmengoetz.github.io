@@ -114,7 +114,7 @@ export default {
     margin-top: 50px;
 }
 
-h2 {
+.section-heading {
     color: #9DC5CA;
 }
 </style>

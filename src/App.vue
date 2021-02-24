@@ -26,28 +26,16 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-body {
-    overflow-x: hidden;
-    font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  overflow-x: hidden;
 }
 
 p {
     line-height: 1.75;
-}
-
-a {
-    color: black;
-}
-
-a:hover {
-    color: #265F65;
 }
 
 .text-primary {
@@ -68,13 +56,13 @@ section {
     padding: 100px 0;
 }
 
-section h2.section-heading {
+.section-heading {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;
 }
 
-section h3.section-subheading {
+.section-subheading {
     font-size: 16px;
     font-weight: 400;
     font-style: italic;
@@ -87,32 +75,6 @@ section h3.section-subheading {
     section {
         padding: 150px 0;
     }
-}
-
-.btn {
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    font-weight: 700;
-}
-
-.btn-xl {
-    font-size: 18px;
-    padding: 20px 40px;
-}
-
-.btn-primary {
-    background-color: #265F65;
-    border-color: #265F65;
-}
-
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-    background-color: #265F65 !important;
-    border-color: #265F65 !important;
-    color: white;
-}
-
-.btn-primary:active, .btn-primary:focus {
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 95, 101, 0.5) !important;
-    box-shadow: 0 0 0 0.2rem rgba(38, 95, 101, 0.5) !important;
 }
 
 ::selection {

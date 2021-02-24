@@ -24,9 +24,6 @@ export default {
 .skill-heading {
     margin: 15px 0;
     text-transform: none;
-}
-
-h4 {
     color: #9DC5CA;
 }
 </style>

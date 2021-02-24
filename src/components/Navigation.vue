@@ -101,6 +101,9 @@ export default {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+.nav-link:hover {
+    color: #265F65;
+}
 #burger {
   display: block;
 }

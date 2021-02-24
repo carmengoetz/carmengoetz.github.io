@@ -55,7 +55,7 @@ export default {
         },
         { 
             year: '2019', 
-            heading: '../../assets/about/7shifts-logo.png', 
+            heading: 'Starting at 7shifts', 
             image: require('../../assets/about/7shifts-logo.png') ,
             description: "Before I graduated, I was hired on as a software developer at 7shifts in Saskatoon. At 7shifts I have been able to grown in my career with many different opportunities. I have been involved on difficult but rewarding projects and presenting solutions and leading them to help execute on the team / department / company roadmap. While doing that, I have been able to learn from intelligent mentors, and pair and collaborate with exceptional people and facilitate knowledge transfers and continual learning.",
             inverted: true
@@ -66,7 +66,14 @@ export default {
             image: require('../../assets/about/CLClogo.png') ,
             description: "In the summer of 2019, I was given the opportunity to be the Coordinator for Saskatoon's Chapter. I would streamline and run Canada Learning Code learning experiences and community events, manage social media accounts to promote events and reach out to the community, and aquire learners, mentors, and facilitators for upcoming events utilizing my abilities to network within the community.",
             inverted: false
-        }
+        },
+        { 
+            year: '2020', 
+            heading: "Joining 7shifts' Diversity Equity and Inclusion committee ", 
+            image: require('../../assets/about/7shifts-logo.png') ,
+            description: "",
+            inverted: true
+        },
       ],
     }
   }

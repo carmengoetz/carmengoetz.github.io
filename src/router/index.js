@@ -7,8 +7,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "Home" */ "../views/Home.vue"),
     meta: {
-      class: 'about',
-      showResume: true
+      class: 'about'
     }  
   },
   {
@@ -17,8 +16,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "About" */ "../views/About.vue"),
     meta: {
-      class: 'about',
-      showResume: false
+      class: 'about'
     }  
   },
   {
@@ -27,8 +25,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "Skills" */ "../views/Skills.vue"),
     meta: {
-      class: 'skills',
-      showResume: false
+      class: 'skills'
     }  
     },
   {
@@ -37,18 +34,16 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "Experience" */ "../views/Experience.vue"),
     meta: {
-      class: 'experience',
-      showResume: false
+      class: 'experience'
     }  
-    },
+  },
   {
     path: '/contact',
     name: 'Contact',
     component: () =>
       import(/* webpackChunkName: "Contact" */ "../views/Contact.vue"),
     meta: {
-      class: 'contact',
-      showResume: false
+      class: 'contact'
     }  
   },
   {
@@ -57,13 +52,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "NotFound" */ "../views/NotFound.vue"),
     meta: {
-      class: 'about',
-      showResume: false
+      class: 'test'
     }  
   },
   {
     path: '/:catchAll(.*)',
-    redirect: '/'
+    redirect: '/not_found'
   }
 ]
 

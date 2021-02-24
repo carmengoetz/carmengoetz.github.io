@@ -14,9 +14,8 @@
         <div class="row fade-in">
           <div class="col-lg-8 mx-auto text-center">
             <h3 class="section-subheading text-light">
-              I am a full stack software developer at 7shifts 
-              in Saskatoon. I am a technology enthusiast, lover of animals and nature, and a Nintendo 
-              fiend! If you want to learn more, scroll for a brief description of my past five years.
+              If you want to learn more about my journey in the tech industry, scroll for a brief 
+              description of my past five years.
             </h3>
           </div>
         </div>
@@ -50,22 +49,6 @@ export default {
     background-color: #202326;
     padding-top: -50px;
     margin-top: 50px;
-}
-
-#about > h4, h2, h5 {
-    color: #9DC5CA;
-}
-
-.team-member {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-.team-member img {
-    width: 300px;
-    height: 300px;
-    border: 7px solid #fff;
 }
 
 </style>

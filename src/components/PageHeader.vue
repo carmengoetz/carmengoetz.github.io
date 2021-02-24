@@ -10,14 +10,6 @@
         </div>
       </div>
 
-      <div v-if="$route.meta.showResume">
-        <a
-          class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
-          href="resources/carmen-resume-v2.pdf"
-          target="_blank"
-        >View My Resume</a>
-      </div>
-
       <div v-if="$route.meta.notFound" >
         <br>
         <router-link
@@ -105,8 +97,6 @@ export default {
         margin-bottom: 50px;
         font-family: 'Roboto Mono', monospace;
     }
-
-    
 }
 /*#endregion HEADER*/
 </style>

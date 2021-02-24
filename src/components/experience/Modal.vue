@@ -138,14 +138,14 @@ export default {
     margin-bottom: 30px;
 }
 
-.experience-modal .modal-content p.item-intro {
+.experience-modal .modal-content .item-intro {
     font-size: 16px;
     font-style: italic;
     margin: 20px 0 30px;
     font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-.experience-modal .modal-content ul.list-inline {
+.experience-modal .modal-content .list-inline {
     margin-top: 0;
     margin-bottom: 30px;
 }
