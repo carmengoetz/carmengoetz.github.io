@@ -1,6 +1,14 @@
 <template>
   <div id="page-top">
     <Navigation />
+
+    <!-- <router-view v-slot="{ Component }">
+        <transition>
+            <keep-alive>
+                <component :is="Component" />
+            </keep-alive>
+        </transition>
+    </router-view> -->
     <div class="container">
         <transition name="component-fade" mode="out-in">
             <router-view :key="$route.path" />

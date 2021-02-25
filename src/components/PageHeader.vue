@@ -8,19 +8,22 @@
         <div class="intro-heading ">
           {{ $route.name }}<span class="blinking-cursor">|</span>
         </div>
-      </div>
-
-      <div v-if="$route.meta.notFound" >
-        <br>
-        <router-link
-                class="navbar-brand js-scroll-trigger" 
-                :to="{
-                  name: 'Software Developer',
-                  hash: '#page-top'
-                }"
-              >
-          Back to Safety
-        </router-link>
+        <div v-if="$route.meta.notFound">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">404 - page not found</h2>
+          </div>
+          <div class="col-lg-12 text-center ">
+            <br>
+            <router-link
+              class="btn btn-primary btn-xl text-uppercase" 
+              :to="{
+                name: 'Software Developer',
+              }"
+            >
+              Back to Safety
+            </router-link>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -46,6 +49,32 @@ export default {
     line-height: 50px;
     margin-bottom: 25px;
     font-family: 'Roboto Mono', monospace;
+}
+
+.btn {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 700;
+}
+
+.btn-xl {
+    font-size: 18px;
+    padding: 20px 40px;
+}
+
+.btn-primary {
+    background-color: #265F65;
+    border-color: #265F65;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+    background-color: #265F65 !important;
+    border-color: #265F65 !important;
+    color: white;
+}
+
+.btn-primary:active, .btn-primary:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 95, 101, 0.5) !important;
+    box-shadow: 0 0 0 0.2rem rgba(38, 95, 101, 0.5) !important;
 }
 
 @media (max-width: 427px) {

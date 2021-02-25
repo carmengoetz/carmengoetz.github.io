@@ -47,17 +47,14 @@ const routes = [
     }  
   },
   {
-    path: '/not_found',
-    name: 'NotFound',
-    component: () =>
-      import(/* webpackChunkName: "NotFound" */ "../views/NotFound.vue"),
-    meta: {
-      class: 'test'
-    }  
-  },
-  {
     path: '/:catchAll(.*)',
-    redirect: '/not_found'
+    name: 'Whoops',
+    component: () =>
+      import(/* webpackChunkName: "Whoops" */ "../views/Whoops.vue"),
+    meta: {
+      class: 'test',
+      notFound: true
+    }
   }
 ]
 

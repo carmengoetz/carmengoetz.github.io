@@ -5,9 +5,7 @@ import router from './router'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+const app = createApp(App);
+app.use(router)
+router.isReady().then(() => app.mount('#app'))
 
-
-
-createApp(App)
-    .use(router)
-    .mount('#app')

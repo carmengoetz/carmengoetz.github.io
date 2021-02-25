@@ -33,7 +33,7 @@
         <div>
         <a
           class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
-          href="resources/carmen-resume-v2.pdf"
+          href="./carmen-resume-v2.pdf"
           target="_blank"
         >View My Resume</a>
       </div>
