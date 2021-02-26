@@ -32,7 +32,9 @@ export default {
 
 </script>
 
-<style>
+<style lang="scss">
+@import "./styles/_variables.scss";
+
 #app {
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
@@ -40,14 +42,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   overflow-x: hidden;
+  background-image: linear-gradient($xiketic, $royal-blue-dark);
+
 }
 
 p {
     line-height: 1.75;
-}
-
-.text-primary {
-    color: #265F65 !important;
 }
 
 h1,
@@ -60,8 +60,16 @@ h6 {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+.container {
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
 section {
     padding: 100px 0;
+    @media (min-width: 768px) {
+        padding: 150px 0;
+}
 }
 
 .section-heading {
@@ -79,14 +87,8 @@ section {
     font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-@media (min-width: 768px) {
-    section {
-        padding: 150px 0;
-    }
-}
-
 ::selection {
-    background: #9DC5CA;
+    background: $blue-jeans;
     text-shadow: none;
 }
 
@@ -99,7 +101,6 @@ img::-moz-selection {
 }
 
 /*#region BLINKING CURSOR*/
-
 .blinking-cursor {
     -webkit-animation: 1s blink step-end infinite;
     -moz-animation: 1s blink step-end infinite;
@@ -113,7 +114,7 @@ img::-moz-selection {
         color: transparent;
     }
     50% {
-        color: #265F65;
+        color: $orchid;
     }
 }
 
@@ -122,7 +123,7 @@ img::-moz-selection {
         color: transparent;
     }
     50% {
-        color: #265F65;
+        color: $orchid;
     }
 }
 
@@ -131,7 +132,7 @@ img::-moz-selection {
         color: transparent;
     }
     50% {
-        color: #265F65;
+        color: $orchid;
     }
 }
 
@@ -140,7 +141,7 @@ img::-moz-selection {
         color: transparent;
     }
     50% {
-        color: #265F65;
+        color: $orchid;
     }
 }
 
@@ -149,13 +150,12 @@ img::-moz-selection {
         color: transparent;
     }
     50% {
-        color: #265F65;
+        color: $orchid;
     }
 }
 /*endregion BLINKING CURSOR*/
 
 /*region ANIMATIONS*/
-
 .component-fade-enter-active,
 .component-fade-leave-active {
   transition: opacity 1s ease;
@@ -170,13 +170,5 @@ img::-moz-selection {
     opacity: 0;
     transition: 3s all ease-in-out;
 }
-
-/* .fade-in-element {
-    animation: fade-in 3s;
-}
-
-.hidden {
-    opacity: 0;
-} */
 /*endregion ANIMATIONS*/
 </style>

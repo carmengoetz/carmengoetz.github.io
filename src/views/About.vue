@@ -43,7 +43,7 @@ export default {
 </script>
 
 
-<style scoped>
+<style scoped lang="scss">
 
 #about {
     background-color: #202326;

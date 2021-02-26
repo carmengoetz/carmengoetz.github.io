@@ -58,7 +58,8 @@ export default {
 </script>
 
 
-<style scoped>
+<style scoped lang="scss">
+@import "../styles/_variables.scss";
 
 #home {
     background-color: #202326;
@@ -93,14 +94,14 @@ export default {
 }
 
 .btn-primary {
-    background-color: #265F65;
-    border-color: #265F65;
+    background-color: $dark-orchid;
+    border-color: $dark-orchid;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-    background-color: #265F65 !important;
-    border-color: #265F65 !important;
-    color: white;
+    background-color: $dark-orchid !important;
+    border-color: $dark-orchid !important;
+    color: $royal-blue-dark;
 }
 
 .btn-primary:active, .btn-primary:focus {

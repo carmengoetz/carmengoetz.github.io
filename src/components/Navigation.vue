@@ -10,7 +10,7 @@
               }"
             >
         <img
-        src="../assets/logos/carmen-goetz-logo.png"
+        src="../assets/logos/LogoMakr-81msP7.png"
         width="300"
         alt="carmen goetz">
       </router-link>
@@ -77,19 +77,20 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../styles/_variables.scss";
+
 .navbar {
-    background-color: white;
+    background-color: $xiketic;
 }
 
-
 .navbar-brand {
-    color: #265F65;
+    color: $dark-orchid;
     font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .router-link-exact-active, .nav-link:hover, .navbar-brand:focus, .navbar-brand:hover {
-    color: #265F65 !important;
+    color: $blue-jeans !important;
 }
 
 .nav-link {
@@ -97,13 +98,14 @@ export default {
     font-weight: 400;
     padding: 0.75em 0;
     letter-spacing: 1px;
-    color: black;
+    color: $dark-orchid;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .nav-link:hover {
-    color: #265F65;
+    color: $blue-jeans;
 }
+
 #burger {
   display: block;
 }
@@ -112,7 +114,7 @@ export default {
   width: 30px;
   height: 3px;
   margin: 8px;
-  background-color: #265F65;
+  background-color: $dark-orchid;
   transition: all 0.3s ease-in;
 }
 
@@ -139,11 +141,10 @@ export default {
 @media (min-width: 992px) {
     .navbar {
         padding-top: 25px;
-        padding-bottom: 25px;
-        -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-        transition: padding-top 0.3s, padding-bottom 0.3s;
+        -webkit-transition: padding-top 0.3s;
+        transition: padding-top 0.3s;
         border: none;
-        background-color: transparent;
+        background-color: $xiketic;
     }
     .navbar-brand {
         font-size: 1.75em;
@@ -157,7 +158,7 @@ export default {
     .navbar-shrink {
         padding-top: 0;
         padding-bottom: 0;
-        background-color: white;
+        background-color: $xiketic;
     }
     .navbar-shrink .navbar-brand {
         font-size: 1.25em;

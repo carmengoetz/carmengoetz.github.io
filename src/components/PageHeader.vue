@@ -1,7 +1,6 @@
 <template>
   <header
-    class="masthead container "
-    :class="$route.meta.class"
+    class="masthead container"
   >
     <div class="container-fluid">
       <div class="intro-text">
@@ -35,12 +34,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../styles/_variables.scss";
+
 .masthead {
     padding-top: 100px;
     text-align: center;
-    color: #265F65;
-
+    color: $orchid;
+    margin-top: 100px;
 }
 
 .masthead .intro-text .intro-heading {
@@ -62,70 +63,45 @@ export default {
 }
 
 .btn-primary {
-    background-color: #265F65;
-    border-color: #265F65;
+    background-color: $dark-orchid;
+    border-color: $dark-orchid;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-    background-color: #265F65 !important;
-    border-color: #265F65 !important;
-    color: white;
+    background-color: $dark-orchid !important;
+    border-color: $dark-orchid !important;
+    color: $blue-jeans !important;
 }
 
 .btn-primary:active, .btn-primary:focus {
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 95, 101, 0.5) !important;
-    box-shadow: 0 0 0 0.2rem rgba(38, 95, 101, 0.5) !important;
-}
-
-@media (max-width: 427px) {
-    #brand {
-        width: 250px;
-    }
-}
-
-@media (max-width: 377px) {
-    #brand {
-        width: 175px;
-    }
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(153, 52, 192, 0.5) !important;
+    box-shadow: 0 0 0 0.2rem rgba(153, 52, 192, 0.5) !important;
 }
 
 @media (min-width: 768px) {
-    .about {
-        background-image: url("../assets/apple-apple-devices-business-205316.jpg");
-    }
-    .skills {
-        margin-top: 100px;
-        background-image: url("../assets/computer-desk-electronics-238118.jpg");
-    }
-    .experience {
-        margin-top: 100px;
-        background-image: url("../assets/coffee-computer-cup-604898.jpeg");
-    }
-    .contact {
-        margin-top: 100px;
-        background-image: url("../assets/computer-cup-desk-434337.jpg");
-    }
-
     .masthead {
+        width: 100%;
         padding-top: 0;
+        background-image: url("../assets/2738.jpg");
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-position: center center;
         background-size: cover;
     }
 
-    .masthead .intro-text {
-        padding-top: 210px;
-        padding-bottom: 290px;
-    }
+  .intro-text {
+      padding-top: 210px;
+      padding-bottom: 290px;
+  }
 
-    .masthead .intro-text .intro-heading {
-        font-size: 60px;
-        font-weight: 700;
-        line-height: 75px;
-        margin-bottom: 50px;
-        font-family: 'Roboto Mono', monospace;
-    }
+  .intro-heading {
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 75px;
+      margin-bottom: 50px;
+      font-family: 'Roboto Mono', monospace;
+  }
 }
 /*#endregion HEADER*/
+
 </style>

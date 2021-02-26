@@ -1,7 +1,7 @@
 <template>
   <div class="col-md-4">
     <span class="fa-stack fa-4x">
-      <i class="fas fa-circle fa-stack-2x text-primary" />
+      <i class="fas fa-circle fa-stack-2x" />
       <i class="fas {{icon}} fa-stack-1x fa-inverse" />
     </span>
     <h4 class="skill-heading">
