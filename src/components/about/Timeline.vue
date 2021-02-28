@@ -64,7 +64,7 @@ export default {
             year: '2019', 
             heading: 'Chapter Coordinator for Canada Learning Code', 
             image: require('../../assets/about/CLClogo.png') ,
-            description: "In the summer of 2019, I was given the opportunity to be the Coordinator for Saskatoon's Chapter. I would streamline and run Canada Learning Code learning experiences and community events, manage social media accounts to promote events and reach out to the community, and aquire learners, mentors, and facilitators for upcoming events utilizing my abilities to network within the community.",
+            description: "In the summer of 2019, I was given the opportunity to be the Coordinator for Saskatoon's Chapter. I would streamline and run Canada Learning Code learning projectss and community events, manage social media accounts to promote events and reach out to the community, and aquire learners, mentors, and facilitators for upcoming events utilizing my abilities to network within the community.",
             inverted: false
         },
         { 

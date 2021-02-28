@@ -1,8 +1,7 @@
 <template>
   <div class="col-md-4">
     <span class="fa-stack fa-4x">
-      <i class="fas fa-circle fa-stack-2x" />
-      <i class="fas {{icon}} fa-stack-1x fa-inverse" />
+      <fa :icon="icon" type="fas" class="fa-inverse footer__icon"></fa>
     </span>
     <h4 class="skill-heading">
       {{ title }}
@@ -15,15 +14,15 @@
 
 <script>
 export default {
-    name: 'Skill',
-    props: ['title', 'description', 'icon']
-}
+  name: "Skill",
+  props: ["title", "description", "icon"],
+};
 </script>
 
 <style scoped>
 .skill-heading {
-    margin: 15px 0;
-    text-transform: none;
-    color: #9DC5CA;
+  margin: 15px 0;
+  text-transform: none;
+  color: #9dc5ca;
 }
 </style>

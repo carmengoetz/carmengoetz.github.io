@@ -1,15 +1,15 @@
 <template>
-  <div id="page-top">
+  <div>
     <Navigation />
-
-    <!-- <router-view v-slot="{ Component }">
-        <transition>
-            <keep-alive>
-                <component :is="Component" />
-            </keep-alive>
-        </transition>
-    </router-view> -->
     <div class="container">
+        <!-- <router-view v-slot="{ Component }" :key="$route.path" >
+            <transition name="component-fade" mode="out-in">
+                <keep-alive>
+                    <component :is="Component" />
+                </keep-alive>
+            </transition>
+        </router-view> -->
+    
         <transition name="component-fade" mode="out-in">
             <router-view :key="$route.path" />
         </transition>
@@ -56,7 +56,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
@@ -66,9 +65,9 @@ h6 {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
     @media (min-width: 768px) {
-        padding: 150px 0;
+        padding: 100px 0;
 }
 }
 
@@ -76,6 +75,7 @@ section {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;
+    color: $orchid;
 }
 
 .section-subheading {
@@ -168,7 +168,7 @@ img::-moz-selection {
 
 .fade-in {
     opacity: 0;
-    transition: 3s all ease-in-out;
+    transition: 2s all ease-in-out;
 }
 /*endregion ANIMATIONS*/
 </style>

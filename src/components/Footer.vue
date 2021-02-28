@@ -2,40 +2,13 @@
   <div class="container footer">
     <div class="row">
       <div class="col-md-4">
-        <span class="copyright">Copyright &copy; Carmen Goetz 2019</span>
+        <span class="footer__copyright">Copyright &copy; Carmen Goetz 2021</span>
       </div>
       <div class="col-md-4">
-        <ul class="list-inline social-buttons">
-          <li class="list-inline-item">
-            <a
-              href="https://linkedin.com/in/carmengoetz/"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin-in" />
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a
-              href="https://www.facebook.com/carmen.goetz"
-              target="_blank"
-            >
-              <i class="fab fa-facebook-f" />
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a
-              href="https://www.instagram.com/carmenbgoetz"
-              target="_blank"
-            >
-              <i class="fab fa-instagram" />
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a
-              href="https://github.com/carmengoetz"
-              target="_blank"
-            >
-              <i class="fab fa-github" />
+        <ul class="list-inline social-buttons footer__buttons">
+          <li v-for="social in socials" :key="social.name" class="list-inline-item">
+            <a :href="social.link" target="_blank" class="footer__link">
+              <fa :icon="social.icon" type="fab" class="footer__icon"></fa>
             </a>
           </li>
         </ul>
@@ -47,37 +20,55 @@
 
 <script>
 export default {
-    name: 'Footer'
-}
+  name: "Footer",
+  data: () => {
+    return {
+      socials: [
+        {
+          name: "linkedin",
+          link: "https://linkedin.com/in/carmengoetz/",
+          icon: "linkedin-in",
+        },
+        {
+          name: "facebook",
+          link: "https://www.facebook.com/carmen.goetz",
+          icon: "facebook-f",
+        },
+        {
+          name: "instagram",
+          link: "https://www.instagram.com/carmenbgoetz",
+          icon: "instagram",
+        },
+        { name: "github", link: "https://github.com/carmengoetz", icon: "github" },
+      ],
+    };
+  },
+};
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../styles/_variables.scss";
+
 /*#region FOOTER*/
 .footer {
-    padding: 25px 0;
-    text-align: center;
-}
+  padding: 25px 0;
+  text-align: center;
 
-.footer span.copyright {
+  &__copyright {
+    margin-top: 40px;
     font-size: 90%;
-    line-height: 40px;
-    text-transform: none;
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
+    line-height: 60px;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
+    color: $blue-jeans;
+  }
 
-.footer ul.quicklinks {
-    font-size: 90%;
-    line-height: 40px;
-    margin-bottom: 0;
-    text-transform: none;
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
+  &__buttons {
+    margin-bottom: 20px;
+  }
 
-ul.social-buttons {
-    margin-bottom: 0;
-}
-
-ul.social-buttons li a {
+  &__link {
     font-size: 20px;
     line-height: 50px;
     display: block;
@@ -88,11 +79,20 @@ ul.social-buttons li a {
     color: white;
     border-radius: 100%;
     outline: none;
-    background-color: #212529;
+    background-color: $dark-orchid;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $orchid;
+    }
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 4px;
+  }
 }
 
-ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-    background-color: #9DC5CA;
-}
 /*#endregion FOOTER*/
 </style>

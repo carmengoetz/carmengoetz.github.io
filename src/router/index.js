@@ -29,12 +29,12 @@ const routes = [
     }  
     },
   {
-    path: '/experience',
-    name: 'Experience',
+    path: '/projects',
+    name: 'Projects',
     component: () =>
-      import(/* webpackChunkName: "Experience" */ "../views/Experience.vue"),
+      import(/* webpackChunkName: "Projects" */ "../views/Projects.vue"),
     meta: {
-      class: 'experience'
+      class: 'projects'
     }  
   },
   {

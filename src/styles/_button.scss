@@ -1,0 +1,13 @@
+.btn {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: $dark-orchid;
+    border-color: $dark-orchid;
+    
+    &:active, &:focus, &:hover {
+        background-color: $orchid !important;
+        border-color: $orchid !important;
+    }
+}

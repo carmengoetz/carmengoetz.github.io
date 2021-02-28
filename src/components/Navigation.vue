@@ -2,51 +2,49 @@
   <div
     class="navbar navbar-expand-lg fixed-top"
   >
-    <div class="container">
-      <router-link
-              class="navbar-brand js-scroll-trigger" 
-              :to="{
-                name: 'Software Developer',
-              }"
-            >
-        <img
-        src="../assets/logos/LogoMakr-81msP7.png"
-        width="300"
-        alt="carmen goetz">
-      </router-link>
-
-      <div v-on:click="openMobileNav()" id="burger"
-        class="navbar-toggler navbar-toggler-right"
-        data-toggle="collapse"
-        data-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      <div
-        id="navbarResponsive"
-        class="collapse navbar-collapse"
-      >
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li
-            v-for="page in pages"
-            :key="page.name"
-            class="nav-item"
+    <router-link
+            class="navbar-brand" 
+            :to="{
+              name: 'Software Developer',
+            }"
           >
-            <router-link
-              class="nav-link" 
-              :to="{
-                name: page.name,
-              }"
-            >
-              {{ page.name }}
-            </router-link>
-          </li>
-        </ul>
+      <img
+      src="../assets/logos/LogoMakr-81msP7.png"
+      width="300"
+      alt="carmen goetz">
+    </router-link>
+
+    <div v-on:click="openMobileNav()" id="burger"
+      class="navbar-toggler navbar-toggler-right"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
+    <div
+      id="navbarResponsive"
+      class="collapse navbar-collapse"
+    >
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li
+          v-for="page in pages"
+          :key="page.name"
+          class="nav-item"
+        >
+          <router-link
+            class="nav-link" 
+            :to="{
+              name: page.name,
+            }"
+          >
+            {{ page.name }}
+          </router-link>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -60,7 +58,7 @@ export default {
       pages: [
         { path: '/about', name: 'About', exact: false },
         { path: '/skills', name: 'Skills', exact: false },
-        { path: '/experience', name: 'Experience', exact: false },
+        { path: '/projects', name: 'Projects', exact: false },
         { path: '/contact', name: 'Contact', exact: false },
       ],
     }
