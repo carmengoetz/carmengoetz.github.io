@@ -14,18 +14,21 @@
         <router-view :key="$route.path" />
       </transition>
     </div>
+    <Scroll />
     <Footer />
   </div>
 </template>
 
 <script>
 import Navigation from "@/components/Navigation.vue";
+import Scroll from "@/components/Scroll.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
   name: "App",
   components: {
     Navigation,
+    Scroll,
     Footer,
   },
 };

@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar navbar-expand-lg fixed-top">
+  <div class="navbar navbar-expand-lg">
     <router-link
       class="navbar-brand"
       :to="{
