@@ -1,7 +1,5 @@
 <template>
-  <header
-    class="masthead"
-  >
+  <header class="masthead">
     <div class="container-fluid">
       <div class="intro-text">
         <div class="intro-heading masthead__heading">
@@ -11,10 +9,10 @@
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">404 - page not found</h2>
           </div>
-          <div class="col-lg-12 text-center ">
-            <br>
+          <div class="col-lg-12 text-center">
+            <br />
             <router-link
-              class="btn btn-primary" 
+              class="btn btn-primary"
               :to="{
                 name: 'Software Developer',
               }"
@@ -30,8 +28,8 @@
 
 <script>
 export default {
-    name: 'PageHeader',
-}
+  name: "PageHeader",
+};
 </script>
 
 <style scoped lang="scss">
@@ -49,7 +47,7 @@ export default {
     font-weight: 700;
     line-height: 50px;
     margin-bottom: 25px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
   }
 }
 
@@ -69,10 +67,9 @@ export default {
       font-weight: 700;
       line-height: 75px;
       margin-bottom: 50px;
-      font-family: 'Roboto Mono', monospace;
+      font-family: "Roboto Mono", monospace;
     }
   }
 }
 /*#endregion HEADER*/
-
 </style>

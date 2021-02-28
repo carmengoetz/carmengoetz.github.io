@@ -4,23 +4,17 @@
 
     <section id="contact">
       <div class="container">
-        <div class="row ">
+        <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">
-              Contact Me
-            </h2>
+            <h2 class="section-heading text-uppercase">Contact Me</h2>
             <h3 class="section-subheading text-muted">
               Get in touch on me for any inquiries you may have!
             </h3>
           </div>
         </div>
-        <div class="row ">
+        <div class="row">
           <div class="col-lg-12">
-            <form
-              id="contactForm"
-              name="sentMessage"
-              novalidate="novalidate"
-            >
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -31,7 +25,7 @@
                       placeholder="Your Name *"
                       required="required"
                       data-validation-required-message="Please enter your name."
-                    >
+                    />
                     <p class="help-block text-danger" />
                   </div>
                   <div class="form-group">
@@ -42,7 +36,7 @@
                       placeholder="Your Email *"
                       required="required"
                       data-validation-required-message="Please enter your email address."
-                    >
+                    />
                     <p class="help-block text-danger" />
                   </div>
                   <div class="form-group">
@@ -51,7 +45,7 @@
                       class="form-control"
                       type="tel"
                       placeholder="Your Phone"
-                    >
+                    />
                     <p class="help-block text-danger" />
                   </div>
                 </div>
@@ -88,77 +82,85 @@
 </template>
 
 <script>
-import PageHeader from '@/components/PageHeader.vue'
+import PageHeader from "@/components/PageHeader.vue";
 
 export default {
-  name: 'Contact',
+  name: "Contact",
   components: {
-    PageHeader
+    PageHeader,
   },
-}
+};
 </script>
 
 <style scoped>
 /*#region CONTACT*/
 
 section#contact {
-    background-color: #212529;
-    background-image: url("../assets/apple-devices-computer-contemporary-234527.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 50px;
+  background-color: #212529;
+  background-image: url("../assets/apple-devices-computer-contemporary-234527.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
 }
 
 section#contact .section-heading {
-    color: #fff;
+  color: #fff;
 }
 
 section#contact .form-group {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 section#contact .form-group input,
 section#contact .form-group textarea {
-    padding: 20px;
+  padding: 20px;
 }
 
 section#contact .form-group input.form-control {
-    height: auto;
+  height: auto;
 }
 
 section#contact .form-group textarea.form-control {
-    height: 248px;
+  height: 248px;
 }
 
 section#contact .form-control:focus {
-    border-color: #9DC5CA;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  border-color: #9dc5ca;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 section#contact ::-webkit-input-placeholder {
-    font-weight: 700;
-    color: #ced4da;
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  color: #ced4da;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 section#contact :-moz-placeholder {
-    font-weight: 700;
-    color: #ced4da;
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  color: #ced4da;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 section#contact ::-moz-placeholder {
-    font-weight: 700;
-    color: #ced4da;
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  color: #ced4da;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 section#contact :-ms-input-placeholder {
-    font-weight: 700;
-    color: #ced4da;
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  color: #ced4da;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /*#endregion CONTACT*/
