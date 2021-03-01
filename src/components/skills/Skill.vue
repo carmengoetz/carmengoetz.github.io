@@ -1,14 +1,7 @@
 <template>
-  <div class="col-md-4">
-    <span class="fa-stack fa-4x">
-      <fa :icon="icon" type="fas" class="fa-inverse footer__icon"></fa>
-    </span>
-    <h4 class="skill-heading">
-      {{ title }}
-    </h4>
-    <p class="text-light">
-      {{ description }}
-    </p>
+  <div class="col-md-4 skill">
+    <fa :icon="icon" type="fas" class="fa-inverse skill__icon"></fa>
+    <p class="skill__description" v-html="description"></p>
   </div>
 </template>
 
@@ -19,10 +12,23 @@ export default {
 };
 </script>
 
-<style scoped>
-.skill-heading {
-  margin: 15px 0;
-  text-transform: none;
-  color: #9dc5ca;
+<style scoped lang="scss">
+.skill {
+  &__icon {
+    width: 100px;
+    height: 100px;
+    color: $orchid;
+  }
+
+  &__heading {
+    margin: 15px 0;
+    text-transform: none;
+    color: $blue-jeans;
+  }
+
+  &__description {
+    margin: 12px auto;
+    color: white;
+  }
 }
 </style>

@@ -85,25 +85,25 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../../styles/_variables.scss";
+
 .timeline {
   position: relative;
   padding: 0;
   list-style: none;
-}
 
-.timeline:before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 40px;
-  width: 2px;
-  margin-left: -1.5px;
-}
+  &:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
 
-@media (min-width: 768px) {
-  .timeline:before {
-    left: 50%;
+    @media (min-width: $mobile-breakpoint) {
+      left: 50%;
+    }
   }
 }
 </style>

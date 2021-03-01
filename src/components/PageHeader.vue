@@ -40,7 +40,6 @@ export default {
   padding-top: 100px;
   text-align: center;
   color: $orchid;
-  margin-top: 90px;
 
   &__heading {
     font-size: 40px;
@@ -51,7 +50,7 @@ export default {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mobile-breakpoint) {
   .masthead {
     width: 100%;
     padding-top: 0;

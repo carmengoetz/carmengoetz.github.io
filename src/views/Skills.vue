@@ -1,119 +1,45 @@
 <template>
   <div class="skills">
     <PageHeader :heading="heading" :page="page" :show-resume="false" />
-    <section id="skills">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Skills</h2>
-            <h3 class="section-subheading text-light" />
-          </div>
-        </div>
-
-        <div
-          v-for="skills in skills"
-          :key="skills.index"
-          class="row text-center skill-row"
-        >
-          <Skill
-            v-for="skill in skills"
-            :key="skill.title"
-            :title="skill.title"
-            :description="skill.description"
-            :icon="skill.icon"
-          />
+    <section>
+      <div class="row fade-in">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading skills__heading">Skills</h2>
         </div>
       </div>
+      <SkillTabs />
     </section>
   </div>
 </template>
 
 <script>
 import PageHeader from "@/components/PageHeader.vue";
-import Skill from "@/components/skills/Skill.vue";
+import SkillTabs from "@/components/skills/SkillTabs.vue";
+import { fadeInElements } from "@/js/animations.js";
 
 export default {
   name: "Skills",
   components: {
     PageHeader,
-    Skill,
+    SkillTabs,
+  },
+  setup() {
+    return fadeInElements();
   },
   data: () => {
     return {
       heading: "Skills",
-      page: "skills",
-      showResume: false,
-      skills: [
-        [
-          {
-            title: "Web Frontend/Backend",
-            description:
-              "Languages and Frameworks:<br>HTML, CSS, JavaScript, PHP, KnockoutJS, Bootstrap, Symphony.",
-            icon: "desktop",
-          },
-          {
-            title: "Systems",
-            description: "Languages:<br>Java, C#, C, Visual Basic",
-            icon: "code",
-          },
-          {
-            title: "Version Control",
-            description:
-              "Projects using Bit Bucket and GitHub. Commits are always well commented and documented",
-            icon: "code-branch",
-          },
-        ],
-        [
-          {
-            title: "Database",
-            description: "Languages and Applications:<br>SQL, SQLite, Oracle",
-            icon: "database",
-          },
-          {
-            title: "Network Administration",
-            description:
-              "Projects with Mac, Windows, Linux, and Microsoft Windows Server 2008 and 2012 R2, worked in PowerShell (ISE), Command Prompt, Linux Terminal",
-            icon: "server",
-          },
-          {
-            title: "Mobile Development",
-            description: "Development in Android Studio, Xamarin, and Swift",
-            icon: "mobile-alt",
-          },
-        ],
-        [
-          {
-            title: "File Management",
-            description:
-              "Deep understanding of computer folder structures, plenty of projects with Microsoft Word, Excel, and Access",
-            icon: "file",
-          },
-          {
-            title: "Communication",
-            description:
-              "Training received for email, chat, and telephone etiquette. Easily approachable and communicate with",
-            icon: "comments",
-          },
-        ],
-      ],
     };
   },
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 @media (min-width: 768px) {
-  .skill-row {
-    margin-bottom: 30px;
+  .skills {
+    &__heading {
+      margin-bottom: 30px;
+    }
   }
-}
-
-#skills {
-  background-color: #202326;
-  margin-top: 50px;
-}
-
-.section-heading {
-  color: #9dc5ca;
 }
 </style>

@@ -44,7 +44,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   overflow-x: hidden;
   background-image: linear-gradient($xiketic, $russian-violet);
 }
@@ -71,7 +70,7 @@ h6 {
 
 section {
   padding: 50px 0;
-  @media (min-width: 768px) {
+  @media (min-width: $mobile-breakpoint) {
     padding: 100px 0;
   }
 }
@@ -183,4 +182,21 @@ img::-moz-selection {
   transition: 2s all ease-in-out;
 }
 /*endregion ANIMATIONS*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $xiketic;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $dark-orchid;
+
+  &:hover {
+    background: $orchid;
+  }
+}
+/*endregion SCROLLBAR*/
 </style>

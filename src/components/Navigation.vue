@@ -135,7 +135,7 @@ export default {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media (min-width: 992px) {
+@media (min-width: $tablet-breakpoint) {
   .navbar {
     padding-top: 25px;
     -webkit-transition: padding-top 0.3s;

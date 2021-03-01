@@ -94,7 +94,7 @@ p {
     "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .projects-item {
     margin: 0 0 30px;
   }

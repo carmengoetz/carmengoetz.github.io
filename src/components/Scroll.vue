@@ -64,9 +64,5 @@ export default {
     margin-left: -1px;
   }
 }
-// fa {
-//   width: 30px;
-//   height: 30px;
-//   margin-bottom: 4px;
-// }
+
 </style>
