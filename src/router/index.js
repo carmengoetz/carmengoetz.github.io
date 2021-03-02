@@ -6,45 +6,30 @@ const routes = [
     name: 'Software Developer',
     component: () =>
       import(/* webpackChunkName: "Home" */ "../views/Home.vue"),
-    meta: {
-      class: 'about'
-    }  
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/career',
+    name: 'Career',
     component: () =>
-      import(/* webpackChunkName: "About" */ "../views/About.vue"),
-    meta: {
-      class: 'about'
-    }  
+      import(/* webpackChunkName: "Career" */ "../views/Career.vue"),
   },
   {
     path: '/skills',
     name: 'Skills',
     component: () =>
       import(/* webpackChunkName: "Skills" */ "../views/Skills.vue"),
-    meta: {
-      class: 'skills'
-    }  
     },
   {
     path: '/projects',
     name: 'Projects',
     component: () =>
       import(/* webpackChunkName: "Projects" */ "../views/Projects.vue"),
-    meta: {
-      class: 'projects'
-    }  
   },
   {
     path: '/contact',
     name: 'Contact',
     component: () =>
       import(/* webpackChunkName: "Contact" */ "../views/Contact.vue"),
-    meta: {
-      class: 'contact'
-    }  
   },
   {
     path: '/:catchAll(.*)',
@@ -52,7 +37,6 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "Whoops" */ "../views/Whoops.vue"),
     meta: {
-      class: 'test',
       notFound: true
     }
   }
