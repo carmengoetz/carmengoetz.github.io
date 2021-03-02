@@ -28,9 +28,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 h4 {
-  color: #9dc5ca;
+  color: $dark-orchid;
   margin: 0;
   text-transform: none;
 }
@@ -55,7 +55,7 @@ h4 {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(38, 95, 101, 0.9);
+  background: rgba(76, 170, 232, 0.9);
 }
 
 .projects-hover:hover {
@@ -82,7 +82,7 @@ h4 {
   margin: 0 auto;
   padding: 25px;
   text-align: center;
-  background-color: #fff;
+  background-color: $blue-jeans;
 }
 
 p {

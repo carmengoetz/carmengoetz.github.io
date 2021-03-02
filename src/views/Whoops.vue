@@ -15,7 +15,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .whoops {
   background-color: white;
   padding-top: -50px;

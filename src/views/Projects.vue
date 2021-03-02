@@ -7,8 +7,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">projects</h2>
-            <h3 class="section-subheading text-light">
+            <h2 class="section-heading">Projects</h2>
+            <h3 class="section-subheading">
               Projects, personal or business, completed or in progress
             </h3>
           </div>
@@ -196,7 +196,6 @@ export default {
 
 <style scoped>
 #projects {
-  background-color: #202326;
   margin-top: 50px;
 }
 
@@ -218,11 +217,6 @@ export default {
   color: grey;
   font-size: 40px;
   padding-bottom: 100px;
-}
-
-h2,
-h4 {
-  color: #9dc5ca;
 }
 
 /*#region projects*/

@@ -71,7 +71,7 @@ h6 {
 section {
   padding: 50px 0;
   @media (min-width: $mobile-breakpoint) {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 }
 
