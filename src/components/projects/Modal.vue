@@ -24,7 +24,7 @@
                   {{ project }}
                 </p>
                 <div
-                  v-if="carousel"
+                  v-if="carousel != null"
                   :id="carousel.id"
                   class="carousel slide"
                   data-ride="carousel"
@@ -72,7 +72,7 @@
                   :src="require(`@/assets/projects/${image.name}`)"
                   :alt="image.alt"
                 />
-                <slot />
+                <p v-html="description" />
                 <ul class="list-inline">
                   <li>Date: {{ date }}</li>
                   <li>Client: {{ client }}</li>
@@ -108,6 +108,7 @@ export default {
 </script>
 
 <style scoped>
+
 .projects-modal {
   padding-right: 0 !important;
 }

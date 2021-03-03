@@ -3,7 +3,7 @@
     <router-link
       class="navbar-brand"
       :to="{
-        name: 'Software Developer',
+        name: 'Home',
       }"
     >
       <img src="../assets/logos/LogoMakr-81msP7.png" width="300" alt="carmen goetz" />
@@ -46,7 +46,7 @@ export default {
   data: () => {
     return {
       pages: [
-        { path: "/", name: "Software Developer", exact: true },
+        { path: "/", name: "Home", exact: true },
         { path: "/career", name: "Career", exact: false },
         { path: "/skills", name: "Skills", exact: false },
         { path: "/projects", name: "Projects", exact: false },

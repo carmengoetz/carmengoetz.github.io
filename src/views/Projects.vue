@@ -1,92 +1,39 @@
 <template>
-  <div class="skills">
+  <div class="projects">
     <PageHeader />
-
-    <!-- projects Grid -->
-    <section id="projects">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Projects</h2>
-            <h3 class="section-subheading">
-              Projects, personal or business, completed or in progress
-            </h3>
-          </div>
+    <section>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Projects</h2>
+          <h3 class="section-subheading projects__description">
+            Projects, personal or business, completed or in progress
+          </h3>
         </div>
-        <div class="row">
-          <Item
-            v-for="item in projects"
-            :key="item.index"
-            :modal="item.modal"
-            :image="item.image"
-            :client="item.client"
-            :category="item.category"
-          />
-        </div>
+      </div>
+      <div class="row">
+        <Item
+          v-for="item in projects"
+          :key="item.index"
+          :modal="item.modal"
+          :image="item.image"
+          :client="item.client"
+          :category="item.category"
+        />
       </div>
     </section>
 
     <Modal
-      :id="projects[0].modal.id"
-      :key="projects[0].index"
-      :project="projects[0].modal.project"
-      :client="projects[0].client"
-      :image="projects[0].modal.image"
-      :date="projects[0].modal.date"
-      :category="projects[0].category"
-    >
-      <p>
-        My own personal website, to show my skills and abilities, and display projects I
-        am proud of. I took inspiration from the
-        <a href="https://startbootstrap.com/themes/agency/" target="_blank">agency</a>
-        bootstrap template. I created this website with HTML, CSS, JavaScript, jquery,
-        PHP, and Bootstrap<br />
-      </p>
-    </Modal>
-
-    <Modal
-      :id="projects[1].modal.id"
-      :key="projects[1].index"
-      :project="projects[1].modal.project"
-      :client="projects[1].client"
-      :carousel="projects[1].modal.carousel"
-      :date="projects[1].modal.date"
-      :category="projects[1].category"
-    >
-      <p>
-        A social media web application with an emphasis on mental health and awareness.
-        Users have the ability to aggregate data about their mental wellness through the
-        web application. When a user has created an account, every time they log on they
-        are asked to enter data about their mental well being for that day. Users can view
-        their mental health history, and give friends or wellness professionals permission
-        to view it also. The application would be would be marketed to wellness
-        professionals, so that they have the ability to view the history of patients, and
-        users can find resources available to them. The main priority with the application
-        is for users to be able to see their statistics and know what kinds of triggers
-        there are. The purpose of the web application is to provide information and
-        resources to the users to help with their mental health. This project was created
-        with a group of 6 people, using the Symphony framework. Since this was a school
-        project, it was never put into production. The source code is available to be
-        viewed in my GitHub.
-      </p>
-    </Modal>
-
-    <Modal
-      :id="projects[2].modal.id"
-      :key="projects[2].index"
-      :project="projects[2].modal.project"
-      :client="projects[2].client"
-      :image="projects[2].modal.image"
-      :date="projects[2].modal.date"
-      :category="projects[2].category"
-    >
-      <p>
-        Business website for a local yoga instructor, Abundantly Ethan. This website will
-        showcase services available, pricing, and calendar for customers to view at any
-        given time. The project is still in development. I am creating this website using
-        the ReactJS framework.
-      </p>
-    </Modal>
+      v-for="(project, i) in projects"
+      :key="`project${i}`"
+      :id="project.modal.id"
+      :project="project.modal.project"
+      :client="project.client"
+      :image="project.modal.image"
+      :carousel="project.modal.carousel"
+      :date="project.modal.date"
+      :category="project.category"
+      :description="project.modal.description"
+    />
   </div>
 </template>
 
@@ -113,7 +60,10 @@ export default {
               name: "carmen-goetz.png",
               alt: "Carmen Goetz",
             },
+            carousel: null,
             date: "February 2019",
+            description:
+              "My own personal website, to show my skills and abilities, and display projects I am proud of. I took inspiration from the <a href='https://startbootstrap.com/themes/agency/' target='_blank'>agency</a> bootstrap template. I created this website with HTML, CSS, JavaScript, jquery, PHP, and Bootstrap<br />",
           },
           image: {
             name: "carmen-goetz-thumb.png",
@@ -126,6 +76,7 @@ export default {
           modal: {
             id: "projectsModal2",
             project: "Wellness Application created for Refresh as a school project.",
+            image: null,
             carousel: {
               id: "refresh-carousel",
               items: [
@@ -163,6 +114,8 @@ export default {
               ],
             },
             date: "September 2017 - April 2018",
+            description:
+              "A social media web application with an emphasis on mental health and awareness. Users have the ability to aggregate data about their mental wellness through the web application. When a user has created an account, every time they log on they are asked to enter data about their mental well being for that day. Users can view their mental health history, and give friends or wellness professionals permission to view it also. The application would be would be marketed to wellness professionals, so that they have the ability to view the history of patients, and users can find resources available to them. The main priority with the application is for users to be able to see their statistics and know what kinds of triggers there are. The purpose of the web application is to provide information and resources to the users to help with their mental health. This project was created with a group of 6 people, using the Symphony framework. Since this was a school project, it was never put into production. The source code is available to be viewed in my GitHub.",
           },
           image: {
             name: "refresh-thumb.png",
@@ -179,7 +132,10 @@ export default {
               name: "abundantly-ethan.jpg",
               alt: "",
             },
+            carousel: null,
             date: "In Progress",
+            description:
+              "Business website for a local yoga instructor, Abundantly Ethan. This website will showcase services available, pricing, and calendar for customers to view at any given time. The project is still in development. I am creating this website using the ReactJS framework.",
           },
           image: {
             name: "abundantly-ethan-thumb.jpg",
@@ -194,113 +150,10 @@ export default {
 };
 </script>
 
-<style scoped>
-#projects {
-  margin-top: 50px;
+<style scoped lang="scss">
+.projects {
+  &__description {
+    color: $blue-jeans;
+  }
 }
-
-.carousel-caption {
-  position: relative;
-  left: auto;
-  right: auto;
-}
-.carousel-control-prev {
-  margin-left: -100px;
-}
-
-.carousel-control-next {
-  margin-right: -100px;
-}
-
-.fa-angle-left,
-.fa-angle-right {
-  color: grey;
-  font-size: 40px;
-  padding-bottom: 100px;
-}
-
-/*#region projects*/
-
-.projects-modal {
-  padding-right: 0 !important;
-}
-
-.projects-modal .modal-dialog {
-  margin: 1rem;
-  max-width: 100vw;
-}
-
-.projects-modal .modal-content {
-  padding: 100px 0;
-  text-align: center;
-}
-
-.projects-modal .modal-content h2 {
-  font-size: 3em;
-  margin-bottom: 15px;
-}
-
-.projects-modal .modal-content p {
-  margin-bottom: 30px;
-}
-
-.projects-modal .modal-content p.item-intro {
-  font-size: 16px;
-  font-style: italic;
-  margin: 20px 0 30px;
-  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.projects-modal .modal-content ul.list-inline {
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
-.projects-modal .modal-content img {
-  margin-bottom: 30px;
-}
-
-.projects-modal .modal-content button {
-  cursor: pointer;
-}
-
-.projects-modal .close-modal {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 75px;
-  height: 75px;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.projects-modal .close-modal:hover {
-  opacity: 0.3;
-}
-
-.projects-modal .close-modal .lr {
-  /* Safari and Chrome */
-  z-index: 1051;
-  width: 1px;
-  height: 75px;
-  margin-left: 35px;
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background-color: #212529;
-}
-
-.projects-modal .close-modal .lr .rl {
-  /* Safari and Chrome */
-  z-index: 1052;
-  width: 1px;
-  height: 75px;
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  background-color: #212529;
-}
-/*#endregion projects*/
 </style>

@@ -3,7 +3,8 @@
     <div class="container-fluid">
       <div class="intro-text">
         <div class="intro-heading masthead__heading">
-          {{ $route.name }}<span class="blinking-cursor">|</span>
+          {{ $route.name == "Home" ? "Software Developer" : $route.name
+          }}<span class="blinking-cursor">|</span>
           <div v-if="$route.meta.notFound">
             <div class="col-lg-12 text-center">
               <h2 class="section-heading text-uppercase">404 - page not found</h2>

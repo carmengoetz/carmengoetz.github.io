@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <PageHeader />
-
     <section>
       <div class="row fade-in">
         <div class="col-lg-12 text-center">
