@@ -1,10 +1,8 @@
 <template>
-  <div class="col-md-4 col-sm-6 projects-item">
-    <a class="projects-link" data-toggle="modal" :href="`#${modal.id}`">
-      <div class="projects-hover">
-        <div class="projects-hover-content">
-          <i class="fas fa-plus fa-3x" />
-        </div>
+  <div class="col-md-4 col-sm-6 projects__item">
+    <a class="projects__link" data-toggle="modal" :href="`#${modal.id}`">
+      <div class="projects__link--hover">
+        <fa icon="plus" class="projects__icon" />
       </div>
       <img
         class="img-fluid"
@@ -12,9 +10,9 @@
         :alt="image.alt"
       />
     </a>
-    <div class="projects-caption">
-      <h4>{{ client }}</h4>
-      <p class="text-muted">
+    <div class="projects__caption">
+      <h4 class="projects__caption--header">{{ client }}</h4>
+      <p class="projects__caption--text">
         {{ category }}
       </p>
     </div>
@@ -29,74 +27,66 @@ export default {
 </script>
 
 <style scoped lang="scss">
-h4 {
-  color: $dark-orchid;
-  margin: 0;
-  text-transform: none;
-}
+.projects {
+  &__item {
+    right: 0;
+    margin: 0 0 15px;
 
-.projects-item {
-  right: 0;
-  margin: 0 0 15px;
-}
+    @media (min-width: 768px) {
+      margin: 0 0 30px;
+    }
+  }
 
-.projects-link {
-  position: relative;
-  display: block;
-  max-width: 400px;
-  margin: 0 auto;
-  cursor: pointer;
-}
+  &__link {
+    position: relative;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    cursor: pointer;
 
-.projects-hover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  opacity: 0;
-  background: rgba(76, 170, 232, 0.9);
-}
+    &--hover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all ease 0.5s;
+      transition: all ease 0.5s;
+      opacity: 0;
+      background: rgba(76, 170, 232, 0.9);
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
 
-.projects-hover:hover {
-  opacity: 1;
-}
+  &__icon {
+    width: 43.8%;
+    margin: 12.5% auto;
+    text-align: center;
+    color: white;
+  }
 
-.projects-hover-content {
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  height: 20px;
-  margin-top: -12px;
-  text-align: center;
-  color: white;
-}
+  &__caption {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+    background-color: $orchid;
 
-.projects-hover-content i {
-  margin-top: -12px;
-}
+    &--header {
+      color: white;
+      margin: 0;
+      text-transform: none;
+    }
 
-.projects-caption {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 25px;
-  text-align: center;
-  background-color: $blue-jeans;
-}
-
-p {
-  font-size: 16px;
-  font-style: italic;
-  margin: 0;
-  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-@media (min-width: 768px) {
-  .projects-item {
-    margin: 0 0 30px;
+    &--text {
+      font-size: 16px;
+      font-style: italic;
+      color: $russian-violet;
+      margin: 0;
+      font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol", "Noto Color Emoji";
+    }
   }
 }
 </style>

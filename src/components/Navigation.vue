@@ -6,7 +6,7 @@
         name: 'Home',
       }"
     >
-      <img src="../assets/logos/LogoMakr-81msP7.png" width="300" alt="carmen goetz" />
+      <img src="../assets/logos/LogoMakr-81msP7.png" class="image" alt="carmen goetz" />
     </router-link>
 
     <div
@@ -80,6 +80,10 @@ export default {
     "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.image {
+  width: 250px;
+}
+
 .router-link-exact-active,
 .nav-link:hover,
 .navbar-brand:focus,
@@ -148,6 +152,7 @@ export default {
     font-size: 1.75em;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    padding: 12px 0;
   }
 
   .nav-link {
@@ -158,10 +163,7 @@ export default {
     padding-bottom: 0;
     background-color: $xiketic;
   }
-  .navbar-shrink .navbar-brand {
-    font-size: 1.25em;
-    padding: 12px 0;
-  }
+
   #burger {
     display: none;
     cursor: pointer;

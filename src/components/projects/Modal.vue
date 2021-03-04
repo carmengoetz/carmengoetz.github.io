@@ -107,7 +107,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 .projects-modal {
   padding-right: 0 !important;

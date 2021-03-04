@@ -36,6 +36,7 @@ export default {
 
 <style lang="scss">
 @import "./styles/_variables.scss";
+@import "./styles/_button.scss";
 
 #app {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,

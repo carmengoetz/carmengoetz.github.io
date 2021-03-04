@@ -1,80 +1,69 @@
 <template>
   <div class="contact">
     <PageHeader />
-
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Contact Me</h2>
-            <h3 class="section-subheading text-muted">
-              Get in touch on me for any inquiries you may have!
-            </h3>
-          </div>
+    <section>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Contact Me</h2>
+          <h3 class="section-subheading">
+            Get in touch on me for any inquiries you may have!
+          </h3>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate="novalidate">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input
-                      id="name"
-                      class="form-control"
-                      type="text"
-                      placeholder="Your Name *"
-                      required="required"
-                      data-validation-required-message="Please enter your name."
-                    />
-                    <p class="help-block text-danger" />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      id="email"
-                      class="form-control"
-                      type="email"
-                      placeholder="Your Email *"
-                      required="required"
-                      data-validation-required-message="Please enter your email address."
-                    />
-                    <p class="help-block text-danger" />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      id="phone"
-                      class="form-control"
-                      type="tel"
-                      placeholder="Your Phone"
-                    />
-                    <p class="help-block text-danger" />
-                  </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form @submit.prevent="sendEmail">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    name="from_name"
+                    class="form-control"
+                    type="text"
+                    placeholder="Your Name *"
+                    required="required"
+                  />
+                  <p class="help-block text-danger" />
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <textarea
-                      id="message"
-                      class="form-control"
-                      placeholder="Your Message *"
-                      required="required"
-                      data-validation-required-message="Please enter a message."
-                    />
-                    <p class="help-block text-danger" />
-                  </div>
+
+                <div class="form-group">
+                  <input
+                    name="from_email"
+                    class="form-control"
+                    type="email"
+                    placeholder="Your Email *"
+                    required="required"
+                  />
+                  <p class="help-block text-danger" />
                 </div>
-                <div class="clearfix" />
-                <div class="col-lg-12 text-center">
-                  <div id="success" />
-                  <button
-                    id="sendMessageButton"
-                    class="btn btn-primary btn-xl text-uppercase"
-                    type="submit"
-                  >
-                    Send Message
-                  </button>
+                <div class="form-group">
+                  <input
+                    name="from_phone"
+                    class="form-control"
+                    type="tel"
+                    pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im"
+                    placeholder="Your Phone"
+                  />
+                  <p class="help-block text-danger" />
                 </div>
               </div>
-            </form>
-          </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea
+                    name="message"
+                    class="form-control"
+                    placeholder="Your Message *"
+                    required="required"
+                  />
+                  <p class="help-block text-danger" />
+                </div>
+              </div>
+              <div class="clearfix" />
+              <div class="col-lg-12 text-center">
+                <button class="btn btn-primary" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -83,85 +72,67 @@
 
 <script>
 import PageHeader from "@/components/PageHeader.vue";
+import emailjs from "emailjs-com";
 
 export default {
   name: "Contact",
   components: {
     PageHeader,
   },
+  methods: {
+    sendEmail: (e) => {
+      emailjs
+        .sendForm(
+          "service_4ysvek7",
+          "template_r185rjp",
+          e.target,
+          "user_20V2lpCRDxS6tEJvEjxAP"
+        )
+        .then(
+          (result) => {
+            console.log("SUCCESS!", result.status, result.text);
+          },
+          (error) => {
+            console.log("FAILED...", error);
+          }
+        );
+    },
+  },
 };
 </script>
 
-<style scoped>
-/*#region CONTACT*/
+<style scoped lang="scss">
+@import "../styles/_button.scss";
 
-section#contact {
-  background-color: #212529;
-  background-image: url("../assets/apple-devices-computer-contemporary-234527.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 50px;
-}
-
-section#contact .section-heading {
-  color: #fff;
-}
-
-section#contact .form-group {
+.form-group {
   margin-bottom: 25px;
 }
-
-section#contact .form-group input,
-section#contact .form-group textarea {
+input,
+textarea {
   padding: 20px;
 }
 
-section#contact .form-group input.form-control {
+input.form-control {
   height: auto;
 }
 
-section#contact .form-group textarea.form-control {
+textarea.form-control {
   height: 248px;
 }
-
-section#contact .form-control:focus {
+.form-control:focus {
   border-color: #9dc5ca;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-section#contact ::-webkit-input-placeholder {
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
   font-weight: 700;
   color: #ced4da;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-section#contact :-moz-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-section#contact ::-moz-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-section#contact :-ms-input-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-/*#endregion CONTACT*/
 </style>
