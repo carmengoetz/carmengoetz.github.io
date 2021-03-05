@@ -72,7 +72,7 @@ export default {
     img {
       width: 300px;
       height: 300px;
-      border: 7px solid #fff;
+      border: 7px solid $orchid;
     }
   }
 

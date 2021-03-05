@@ -1,12 +1,12 @@
 <template>
   <div class="navbar navbar-expand-lg">
     <router-link
-      class="navbar-brand"
+      class="navbar-brand glitch"
       :to="{
         name: 'Home',
       }"
     >
-      <img src="../assets/logos/LogoMakr-81msP7.png" class="image" alt="carmen goetz" />
+      carmen goetz
     </router-link>
 
     <div
@@ -27,7 +27,8 @@
       <ul class="navbar-nav text-uppercase ml-auto">
         <li v-for="page in pages" :key="page.name" class="nav-item">
           <router-link
-            class="nav-link"
+            class="nav-link glitch"
+            :data-text="page.name"
             :to="{
               name: page.name,
             }"
@@ -68,6 +69,7 @@ export default {
 
 <style scoped lang="scss">
 @import "../styles/_variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
 
 .navbar {
   background-color: $xiketic;
@@ -75,13 +77,11 @@ export default {
 
 .navbar-brand {
   color: $dark-orchid;
-  font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.image {
-  width: 250px;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-family: "DotGothic16", sans-serif;
+  padding: 0 12px;
 }
 
 .router-link-exact-active,
@@ -149,10 +149,9 @@ export default {
     background-color: $xiketic;
   }
   .navbar-brand {
-    font-size: 1.75em;
+    font-size: 40px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    padding: 12px 0;
   }
 
   .nav-link {

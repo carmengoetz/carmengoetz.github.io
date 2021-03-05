@@ -108,7 +108,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 .projects-modal {
   padding-right: 0 !important;
 }
@@ -136,7 +135,7 @@ export default {
   font-size: 16px;
   font-style: italic;
   margin: 20px 0 30px;
-  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
 }

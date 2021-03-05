@@ -37,6 +37,7 @@ export default {
 <style lang="scss">
 @import "./styles/_variables.scss";
 @import "./styles/_button.scss";
+@import "./styles/_animations.scss";
 
 #app {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -89,7 +90,7 @@ section {
   font-style: italic;
   margin-bottom: 75px;
   text-transform: none;
-  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -106,66 +107,6 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
-
-/*#region BLINKING CURSOR*/
-.blinking-cursor {
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
-}
-
-@keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: $orchid;
-  }
-}
-
-@-moz-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: $orchid;
-  }
-}
-
-@-webkit-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: $orchid;
-  }
-}
-
-@-ms-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: $orchid;
-  }
-}
-
-@-o-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: $orchid;
-  }
-}
-/*endregion BLINKING CURSOR*/
 
 /*region ANIMATIONS*/
 .component-fade-enter-active,
