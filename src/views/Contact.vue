@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Contact Me</h2>
-          <h3 class="section-subheading">
+          <h3 class="section-subheading contact__description">
             Get in touch on me for any inquiries you may have!
           </h3>
         </div>
@@ -103,7 +103,11 @@ export default {
 
 <style scoped lang="scss">
 @import "../styles/_button.scss";
-
+.contact {
+  &__description {
+    color: $blue-jeans;
+  }
+}
 .form-group {
   margin-bottom: 25px;
 }

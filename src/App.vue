@@ -82,6 +82,9 @@ section {
   margin-top: 0;
   margin-bottom: 15px;
   color: $orchid;
+  @media (max-width: $mobile-breakpoint) {
+    display: none;
+  }
 }
 
 .section-subheading {

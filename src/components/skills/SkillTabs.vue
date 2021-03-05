@@ -91,16 +91,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@media (min-width: 768px) {
-  .skills {
+.skills {
+  &__tab {
+    color: $blue-jeans;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  @media (min-width: 768px) {
     &__tabs {
       margin: 0 auto;
-    }
-
-    &__tab {
-      padding: 10px 20px;
-      color: $blue-jeans;
-      cursor: pointer;
     }
 
     &__skill {
@@ -108,9 +107,9 @@ export default {
     }
   }
   .active-tab {
-  border-width: 0px;
-  border-top-width: 2px;
-  border-style: solid;
-}
+    border-width: 0px;
+    border-top-width: 2px;
+    border-style: solid;
+  }
 }
 </style>

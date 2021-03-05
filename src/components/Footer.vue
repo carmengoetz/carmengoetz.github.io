@@ -8,7 +8,7 @@
         <ul class="list-inline social-buttons footer__buttons">
           <li v-for="social in socials" :key="social.name" class="list-inline-item">
             <a :href="social.link" target="_blank" class="footer__link">
-              <fa :icon="social.icon" type="fab" class="glitch footer__icon"></fa>
+              <fa :icon="social.icon" type="fab" class="footer__icon"></fa>
             </a>
           </li>
         </ul>

@@ -1,7 +1,8 @@
 <template>
   <div class="navbar navbar-expand-lg">
     <router-link
-      class="navbar-brand glitch"
+      class="navbar-brand glitch__brand"
+      data-text="carmen goetz"
       :to="{
         name: 'Home',
       }"
@@ -150,8 +151,6 @@ export default {
   }
   .navbar-brand {
     font-size: 40px;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
   }
 
   .nav-link {
