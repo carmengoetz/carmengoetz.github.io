@@ -10,7 +10,7 @@
           </h3>
         </div>
       </div>
-      <div class="row">
+      <div class="row projects__items">
         <Item
           v-for="item in projects"
           :key="item.index"
@@ -60,7 +60,6 @@ export default {
               name: "carmen-goetz.png",
               alt: "Carmen Goetz",
             },
-            carousel: null,
             date: "February 2019",
             description:
               "My own personal website, to show my skills and abilities, and display projects I am proud of. I took inspiration from the <a href='https://startbootstrap.com/themes/agency/' target='_blank'>agency</a> bootstrap template. I created this website with HTML, CSS, JavaScript, jquery, PHP, and Bootstrap<br />",
@@ -76,43 +75,8 @@ export default {
           modal: {
             id: "projectsModal2",
             project: "Wellness Application created for Refresh as a school project.",
-            image: null,
-            carousel: {
-              id: "refresh-carousel",
-              items: [
-                {
-                  image: "refresh1.png",
-                  alt: "Registration",
-                  description: "Registration Page",
-                  active: true,
-                },
-                {
-                  image: "refresh2.png",
-                  alt: "User Profile",
-                  description: "User Profile",
-                },
-                {
-                  image: "refresh5.png",
-                  alt: "Wellness Professional Profile",
-                  description: "Wellness Professional Profile",
-                },
-                {
-                  image: "refresh6.png",
-                  alt: "Enter Your Wellness Status",
-                  description: "Enter Your Wellness Status",
-                },
-                {
-                  image: "refresh8.png",
-                  alt: "List of Nearby Wellness Professionals",
-                  description: "List of Nearby Wellness Professionals",
-                },
-                {
-                  image: "refresh9.png",
-                  alt: "Messaging",
-                  description: "Messaging",
-                },
-              ],
-            },
+            image: { name: "refresh2.png", alt: "User Profile" },
+
             date: "September 2017 - April 2018",
             description:
               "A social media web application with an emphasis on mental health and awareness. Users have the ability to aggregate data about their mental wellness through the web application. When a user has created an account, every time they log on they are asked to enter data about their mental well being for that day. Users can view their mental health history, and give friends or wellness professionals permission to view it also. The application would be would be marketed to wellness professionals, so that they have the ability to view the history of patients, and users can find resources available to them. The main priority with the application is for users to be able to see their statistics and know what kinds of triggers there are. The purpose of the web application is to provide information and resources to the users to help with their mental health. This project was created with a group of 6 people, using the Symphony framework. Since this was a school project, it was never put into production. The source code is available to be viewed in my GitHub.",
@@ -132,7 +96,6 @@ export default {
               name: "abundantly-ethan.jpg",
               alt: "",
             },
-            carousel: null,
             date: "In Progress",
             description:
               "Business website for a local yoga instructor, Abundantly Ethan. This website will showcase services available, pricing, and calendar for customers to view at any given time. The project is still in development. I am creating this website using the ReactJS framework.",

@@ -53,6 +53,7 @@ export default {
 .footer {
   padding: 25px 0;
   text-align: center;
+  bottom: 10px;
 
   &__copyright {
     margin-top: 40px;

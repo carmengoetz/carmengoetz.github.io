@@ -18,9 +18,9 @@
                 <div class="form-group">
                   <input
                     name="from_name"
-                    class="form-control"
+                    class="form-control form-control__input"
                     type="text"
-                    placeholder="Your Name *"
+                    placeholder="Name *"
                     required="required"
                   />
                   <p class="help-block text-danger" />
@@ -29,9 +29,9 @@
                 <div class="form-group">
                   <input
                     name="from_email"
-                    class="form-control"
+                    class="form-control form-control__input"
                     type="email"
-                    placeholder="Your Email *"
+                    placeholder="Email *"
                     required="required"
                   />
                   <p class="help-block text-danger" />
@@ -39,10 +39,10 @@
                 <div class="form-group">
                   <input
                     name="from_phone"
-                    class="form-control"
+                    class="form-control form-control__input"
                     type="tel"
                     pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im"
-                    placeholder="Your Phone"
+                    placeholder="Phone Number"
                   />
                   <p class="help-block text-danger" />
                 </div>
@@ -51,8 +51,8 @@
                 <div class="form-group">
                   <textarea
                     name="message"
-                    class="form-control"
-                    placeholder="Your Message *"
+                    class="form-control form-control__text"
+                    placeholder="Message *"
                     required="required"
                   />
                   <p class="help-block text-danger" />
@@ -108,35 +108,27 @@ export default {
     color: $blue-jeans;
   }
 }
-.form-group {
-  margin-bottom: 25px;
-}
-input,
-textarea {
+
+.form-control {
   padding: 20px;
-}
+  color: $orchid;
 
-input.form-control {
-  height: auto;
-}
+  &::placeholder {
+    color: $orchid;
+  }
 
-textarea.form-control {
-  height: 248px;
-}
-.form-control:focus {
-  border-color: #9dc5ca;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
+  &__input {
+    height: auto;
+  }
 
-::-webkit-input-placeholder,
-:-moz-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  &__text {
+    height: 230px;
+  }
+
+  &:focus {
+    border-color: $orchid;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 }
 </style>

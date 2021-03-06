@@ -46,7 +46,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  overflow-x: hidden;
+  overflow-x: visible;
   background-image: linear-gradient($xiketic, $russian-violet);
 }
 
@@ -71,6 +71,7 @@ h6 {
 }
 
 section {
+  margin: 0 30px;
   padding: 50px 0;
   @media (min-width: $mobile-breakpoint) {
     padding: 20px 0 50px 0;

@@ -22,51 +22,7 @@
               <p class="item-intro projects-modal__project">
                 {{ project }}
               </p>
-              <div
-                v-if="carousel != null"
-                :id="carousel.id"
-                class="carousel slide"
-                data-ride="carousel"
-              >
-                <div
-                  v-for="item in carousel.items"
-                  :key="item.index"
-                  class="carousel-inner"
-                >
-                  <div class="carousel-item" :class="{ active: item.active }">
-                    <img
-                      class="d-block w-100 projects-modal__image"
-                      :src="require(`@/assets/projects/${item.image}`)"
-                      :alt="item.alt"
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <p class="">
-                        {{ item.description }}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <a
-                  class="carousel-control-prev"
-                  :href="`#${carousel.id}`"
-                  role="button"
-                  data-slide="prev"
-                >
-                  <span class="fas fa-angle-left" aria-hidden="true" />
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a
-                  class="carousel-control-next"
-                  :href="`#${carousel.id}`"
-                  role="button"
-                  data-slide="next"
-                >
-                  <span class="fas fa-angle-right" aria-hidden="true" />
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
               <img
-                v-else
                 class="img-fluid d-block mx-auto projects-modal__image"
                 :src="require(`@/assets/projects/${image.name}`)"
                 :alt="image.alt"
