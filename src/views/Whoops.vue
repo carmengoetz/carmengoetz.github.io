@@ -1,17 +1,10 @@
 <template>
-  <div class="whoops">
-    <PageHeader />
-  </div>
+  <div class="whoops"></div>
 </template>
 
 <script>
-import PageHeader from "@/components/PageHeader.vue";
-
 export default {
   name: "Whoops",
-  components: {
-    PageHeader,
-  },
 };
 </script>
 

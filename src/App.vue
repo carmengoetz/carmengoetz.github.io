@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navigation />
+    <PageHeader />
     <div class="container">
       <!-- <router-view v-slot="{ Component }" :key="$route.path" >
             <transition name="component-fade" mode="out-in">
@@ -23,16 +24,19 @@
 import Navigation from "@/components/Navigation.vue";
 import Scroll from "@/components/Scroll.vue";
 import Footer from "@/components/Footer.vue";
+import PageHeader from "./components/PageHeader.vue";
 
 export default {
   name: "App",
   components: {
     Navigation,
+    PageHeader,
     Scroll,
     Footer,
   },
 };
 </script>
+PageHeader
 
 <style lang="scss">
 @import "./styles/_variables.scss";

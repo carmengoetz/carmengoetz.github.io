@@ -1,6 +1,5 @@
 <template>
   <div class="projects">
-    <PageHeader />
     <section>
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -38,14 +37,12 @@
 </template>
 
 <script>
-import PageHeader from "@/components/PageHeader.vue";
 import Item from "@/components/projects/Item.vue";
 import Modal from "@/components/projects/Modal.vue";
 
 export default {
   name: "Projects",
   components: {
-    PageHeader,
     Item,
     Modal,
   },

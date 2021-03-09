@@ -93,7 +93,7 @@ to {
         &::before{
             @include glitchCopy;
             left: 2px;
-            text-shadow: -42x 0 $orchid;
+            text-shadow: -2x 0 $orchid;
             clip: rect(44px, 450px, 56px, 0);
             animation: glitch-anim 5s infinite linear alternate-reverse;
         }

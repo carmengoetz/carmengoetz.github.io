@@ -14,7 +14,7 @@
               <router-link
                 class="btn btn-primary"
                 :to="{
-                  name: 'Software Developer',
+                  name: 'Home',
                 }"
               >
                 Back to Safety

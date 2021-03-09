@@ -1,84 +1,78 @@
 <template>
-  <div class="contact">
-    <PageHeader />
-    <section>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Contact Me</h2>
-          <h3 class="section-subheading contact__description">
-            Get in touch on me for any inquiries you may have!
-          </h3>
-        </div>
+  <section class="contact">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Contact Me</h2>
+        <h3 class="section-subheading contact__description">
+          Get in touch on me for any inquiries you may have!
+        </h3>
       </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <form @submit.prevent="sendEmail">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input
-                    name="from_name"
-                    class="form-control form-control__input"
-                    type="text"
-                    placeholder="Name *"
-                    required="required"
-                  />
-                  <p class="help-block text-danger" />
-                </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <form @submit.prevent="sendEmail">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input
+                  name="from_name"
+                  class="form-control form-control__input"
+                  type="text"
+                  placeholder="Name *"
+                  required="required"
+                />
+                <p class="help-block text-danger" />
+              </div>
 
-                <div class="form-group">
-                  <input
-                    name="from_email"
-                    class="form-control form-control__input"
-                    type="email"
-                    placeholder="Email *"
-                    required="required"
-                  />
-                  <p class="help-block text-danger" />
-                </div>
-                <div class="form-group">
-                  <input
-                    name="from_phone"
-                    class="form-control form-control__input"
-                    type="tel"
-                    pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im"
-                    placeholder="Phone Number"
-                  />
-                  <p class="help-block text-danger" />
-                </div>
+              <div class="form-group">
+                <input
+                  name="from_email"
+                  class="form-control form-control__input"
+                  type="email"
+                  placeholder="Email *"
+                  required="required"
+                />
+                <p class="help-block text-danger" />
               </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <textarea
-                    name="message"
-                    class="form-control form-control__text"
-                    placeholder="Message *"
-                    required="required"
-                  />
-                  <p class="help-block text-danger" />
-                </div>
-              </div>
-              <div class="clearfix" />
-              <div class="col-lg-12 text-center">
-                <button class="btn btn-primary" type="submit">Send Message</button>
+              <div class="form-group">
+                <input
+                  name="from_phone"
+                  class="form-control form-control__input"
+                  type="tel"
+                  pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im"
+                  placeholder="Phone Number"
+                />
+                <p class="help-block text-danger" />
               </div>
             </div>
-          </form>
-        </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  class="form-control form-control__text"
+                  placeholder="Message *"
+                  required="required"
+                />
+                <p class="help-block text-danger" />
+              </div>
+            </div>
+            <div class="clearfix" />
+            <div class="col-lg-12 text-center">
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </div>
+          </div>
+        </form>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
-import PageHeader from "@/components/PageHeader.vue";
 import emailjs from "emailjs-com";
 
 export default {
   name: "Contact",
-  components: {
-    PageHeader,
-  },
+  components: {},
   methods: {
     sendEmail: (e) => {
       emailjs

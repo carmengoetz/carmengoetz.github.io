@@ -1,26 +1,21 @@
 <template>
-  <div class="skills">
-    <PageHeader :heading="heading" :page="page" :show-resume="false" />
-    <section>
-      <div class="row fade-in">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading skills__heading">Skills</h2>
-        </div>
+  <section class="skills">
+    <div class="row fade-in">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading skills__heading">Skills</h2>
       </div>
-      <SkillTabs />
-    </section>
-  </div>
+    </div>
+    <SkillTabs />
+  </section>
 </template>
 
 <script>
-import PageHeader from "@/components/PageHeader.vue";
 import SkillTabs from "@/components/skills/SkillTabs.vue";
 import { fadeInElements } from "@/js/animations.js";
 
 export default {
   name: "Skills",
   components: {
-    PageHeader,
     SkillTabs,
   },
   setup() {
