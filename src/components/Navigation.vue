@@ -7,7 +7,11 @@
         name: 'Home',
       }"
     >
-      carmen goetz
+      <img
+        src="../assets/160293217_260754872185421_1608448610566618226_n.png"
+        alt="Italian Trulli"
+        width="200"
+      />
     </router-link>
 
     <div

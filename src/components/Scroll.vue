@@ -1,6 +1,6 @@
 <template>
   <a @click="scrollTop" v-show="visible" class="bottom-right scroll">
-    <fa icon="chevron-circle-up" type="fas" class="scroll__icon" />
+    <fa icon="caret-up" type="fas" class="scroll__icon" />
   </a>
 </template>
 
@@ -19,7 +19,7 @@ export default {
           clearInterval(this.intervalId);
         }
         window.scroll(0, window.pageYOffset - 50);
-      }, 10);
+      }, 20);
     },
     scrollListener: function () {
       this.visible = window.scrollY > 150;
@@ -46,23 +46,21 @@ export default {
   height: 48px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: $dark-orchid;
+  color: white;
   border-radius: 100%;
   outline: none;
-  background-color: white;
+  // background-color: white;
 
   &:active,
   &:focus,
   &:hover {
-    color: $orchid;
+    background-color: $xiketic;
   }
 
   &__icon {
-    width: 50px;
-    height: 50px;
-    margin-top: -1px;
-    margin-left: -1px;
+    width: 45px;
+    height: 45px;
+    margin-top: -5px;
   }
 }
-
 </style>

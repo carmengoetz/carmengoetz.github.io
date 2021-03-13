@@ -1,24 +1,26 @@
 <template>
   <header class="masthead">
-    <div class="container-fluid">
-      <div class="intro-text">
-        <div class="intro-heading masthead__heading">
-          {{ $route.name == "Home" ? "Software Developer" : $route.name
-          }}<span class="blinking-cursor">|</span>
-          <div v-if="$route.meta.notFound">
-            <div class="col-lg-12 text-center">
-              <h2 class="section-heading text-uppercase">404 - page not found</h2>
-            </div>
-            <div class="col-lg-12 text-center">
-              <br />
-              <router-link
-                class="btn btn-primary"
-                :to="{
-                  name: 'Home',
-                }"
-              >
-                Back to Safety
-              </router-link>
+    <div class="masthead__mask">
+      <div class="container-fluid">
+        <div class="intro-text">
+          <div class="intro-heading masthead__heading">
+            {{ $route.name == "Home" ? "Software Developer" : $route.name
+            }}<span class="blinking-cursor">|</span>
+            <div v-if="$route.meta.notFound">
+              <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">404 - page not found</h2>
+              </div>
+              <div class="col-lg-12 text-center">
+                <br />
+                <router-link
+                  class="btn btn-primary"
+                  :to="{
+                    name: 'Home',
+                  }"
+                >
+                  Back to Safety
+                </router-link>
+              </div>
             </div>
           </div>
         </div>
@@ -34,7 +36,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../styles/_variables.scss";
 @import "../styles/_button.scss";
 
 .masthead {
@@ -59,6 +60,10 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    &__mask {
+      background-color: transparent;
+      background-image: url("../assets/stardust.png");
+    }
 
     &__heading {
       padding-top: 210px;

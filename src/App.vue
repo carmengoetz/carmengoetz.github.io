@@ -39,10 +39,7 @@ export default {
 PageHeader
 
 <style lang="scss">
-@import "./styles/_variables.scss";
-@import "./styles/_button.scss";
 @import "./styles/_animations.scss";
-
 #app {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -50,7 +47,7 @@ PageHeader
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  overflow-x: visible;
+  overflow-x: hidden;
   background-image: linear-gradient($xiketic, $russian-violet);
 }
 

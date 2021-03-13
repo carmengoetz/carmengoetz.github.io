@@ -8,7 +8,17 @@
         <ul class="list-inline social-buttons footer__buttons">
           <li v-for="social in socials" :key="social.name" class="list-inline-item">
             <a :href="social.link" target="_blank" class="footer__link">
-              <fa :icon="social.icon" type="fab" class="footer__icon"></fa>
+              <fa :icon="social.icon" type="fab" class="footer__icon glitch__footer"></fa>
+              <fa
+                :icon="social.icon"
+                type="fab"
+                class="footer__icon glitch__footer glitch__footer--effect-1"
+              ></fa>
+              <fa
+                :icon="social.icon"
+                type="fab"
+                class="footer__icon glitch__footer glitch__footer--effect-2"
+              ></fa>
             </a>
           </li>
         </ul>
@@ -47,8 +57,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../styles/_variables.scss";
-
 /*#region FOOTER*/
 .footer {
   padding: 25px 0;
@@ -80,18 +88,21 @@ export default {
     color: white;
     border-radius: 100%;
     outline: none;
-    background-color: $dark-orchid;
+    // background-color: $xiketic;
+    position: relative;
 
     &:active,
     &:focus,
     &:hover {
-      background-color: $orchid;
+      background-color: $xiketic;
     }
   }
   &__icon {
     width: 30px;
     height: 30px;
-    margin-bottom: 4px;
+    // margin-bottom: 4px;
+    position: absolute;
+    transform: translate(-50%, 35%);
   }
 }
 
