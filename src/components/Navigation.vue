@@ -9,7 +9,7 @@
     >
       <img
         src="../assets/160293217_260754872185421_1608448610566618226_n.png"
-        alt="Italian Trulli"
+        alt="carmen goetz"
         width="200"
       />
     </router-link>
@@ -87,6 +87,7 @@ export default {
   letter-spacing: 3px;
   font-family: "DotGothic16", sans-serif;
   padding: 0 12px;
+  margin: 0 40px -36px 40px;
 }
 
 .router-link-exact-active,
@@ -147,7 +148,7 @@ export default {
 
 @media (min-width: $tablet-breakpoint) {
   .navbar {
-    padding-top: 25px;
+    padding-top: 4px;
     -webkit-transition: padding-top 0.3s;
     transition: padding-top 0.3s;
     border: none;

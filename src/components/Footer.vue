@@ -7,8 +7,7 @@
       <div class="col-md-4">
         <ul class="list-inline social-buttons footer__buttons">
           <li v-for="social in socials" :key="social.name" class="list-inline-item">
-            <a :href="social.link" target="_blank" class="footer__link">
-              <fa :icon="social.icon" type="fab" class="footer__icon glitch__footer"></fa>
+            <a :href="social.link" target="_blank" class="footer__link glitch__footer">
               <fa
                 :icon="social.icon"
                 type="fab"
@@ -19,11 +18,12 @@
                 type="fab"
                 class="footer__icon glitch__footer glitch__footer--effect-2"
               ></fa>
+              <fa :icon="social.icon" type="fab" class="footer__icon glitch__footer"></fa>
             </a>
           </li>
         </ul>
       </div>
-      <div class="col-md-4" />
+      <!-- <div class="col-md-4" /> -->
     </div>
   </div>
 </template>
@@ -57,6 +57,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../styles/_variables.scss";
+
 /*#region FOOTER*/
 .footer {
   padding: 25px 0;
@@ -83,28 +85,14 @@ export default {
     display: block;
     width: 50px;
     height: 50px;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
     color: white;
-    border-radius: 100%;
-    outline: none;
-    // background-color: $xiketic;
     position: relative;
-
-    &:active,
-    &:focus,
-    &:hover {
-      background-color: $xiketic;
-    }
   }
   &__icon {
     width: 30px;
     height: 30px;
-    // margin-bottom: 4px;
     position: absolute;
-    transform: translate(-50%, 35%);
   }
 }
-
 /*#endregion FOOTER*/
 </style>

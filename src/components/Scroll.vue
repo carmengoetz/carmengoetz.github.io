@@ -1,6 +1,16 @@
 <template>
-  <a @click="scrollTop" v-show="visible" class="bottom-right scroll">
-    <fa icon="caret-up" type="fas" class="scroll__icon" />
+  <a @click="scrollTop" v-show="visible" class="scroll glitch__scroll">
+    <fa
+      icon="caret-up"
+      type="fas"
+      class="scroll__icon glitch__scroll glitch__scroll--effect-1"
+    />
+    <fa
+      icon="caret-up"
+      type="fas"
+      class="scroll__icon glitch__scroll glitch__scroll--effect-2"
+    />
+    <fa icon="caret-up" type="fas" class="scroll__icon glitch__scroll" />
   </a>
 </template>
 
@@ -37,30 +47,18 @@ export default {
 <style scoped lang="scss">
 .scroll {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
   cursor: pointer;
   line-height: 40px;
   display: block;
   width: 48px;
   height: 48px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   color: white;
-  border-radius: 100%;
-  outline: none;
-  // background-color: white;
-
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: $xiketic;
-  }
 
   &__icon {
     width: 45px;
     height: 45px;
     margin-top: -5px;
+    position: absolute;
   }
 }
 </style>
