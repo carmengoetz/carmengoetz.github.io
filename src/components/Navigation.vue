@@ -101,7 +101,7 @@ export default {
   font-size: 90%;
   font-weight: 400;
   padding: 0.75em 0;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: $dark-orchid;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",

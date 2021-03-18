@@ -58,7 +58,7 @@
             </div>
             <div class="clearfix" />
             <div class="col-lg-12 text-center">
-              <button class="btn btn-primary" type="submit">Send Message</button>
+              <button class="button" type="submit">Send Message</button>
             </div>
           </div>
         </form>

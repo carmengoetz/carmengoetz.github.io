@@ -8,12 +8,11 @@
             }}<span class="blinking-cursor">|</span>
             <div v-if="$route.meta.notFound">
               <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">404 - page not found</h2>
+                <h2 class="section-heading masthead__not-found">404 - page not found</h2>
               </div>
-              <div class="col-lg-12 text-center">
-                <br />
+              <div class="col-lg-12">
                 <router-link
-                  class="btn btn-primary"
+                  class="button"
                   :to="{
                     name: 'Home',
                   }"
@@ -67,12 +66,16 @@ export default {
 
     &__heading {
       padding-top: 210px;
-      padding-bottom: 290px;
+      padding-bottom: 260px;
       font-size: 60px;
       font-weight: 700;
       line-height: 75px;
       margin-bottom: 50px;
       font-family: "Roboto Mono", monospace;
+    }
+
+    &__not-found {
+      padding-top: 36px;
     }
   }
 }

@@ -26,8 +26,12 @@
       </div>
     </div>
     <div class="row fade-in">
-      <div class="col-lg-8 mx-auto text-center">
-        <a class="btn btn-primary" href="./carmen-resume-v2.pdf" target="_blank"
+      <div class="col-lg-8 mx-auto">
+        <a
+          class="button"
+          data-text="View My Resume"
+          href="./carmen-resume-v2.pdf"
+          target="_blank"
           >View My Resume</a
         >
       </div>
@@ -51,12 +55,6 @@ export default {
 @import "../styles/_button.scss";
 
 .home {
-  > h4,
-  h2,
-  h5 {
-    color: $orchid;
-  }
-
   &__photo {
     margin-top: 50px;
     margin-bottom: 50px;
