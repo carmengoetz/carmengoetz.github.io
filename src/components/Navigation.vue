@@ -9,8 +9,8 @@
     >
       <img
         src="../assets/160293217_260754872185421_1608448610566618226_n.png"
-        alt="Italian Trulli"
-        width="200"
+        alt="carmen goetz"
+        class="navbar-brand__image"
       />
     </router-link>
 
@@ -86,7 +86,19 @@ export default {
   font-weight: 600;
   letter-spacing: 3px;
   font-family: "DotGothic16", sans-serif;
+  width: 200px;
   padding: 0 12px;
+  margin: 0 40px -36px 40px;
+  &__image {
+    width: 200px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 0;
+    &__image {
+      width: 150px;
+    }
+  }
 }
 
 .router-link-exact-active,
