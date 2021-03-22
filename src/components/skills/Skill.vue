@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-4 skill">
+  <div class="skill">
     <fa :icon="icon" type="fas" class="fa-inverse skill__icon"></fa>
     <p class="skill__description" v-html="description"></p>
   </div>

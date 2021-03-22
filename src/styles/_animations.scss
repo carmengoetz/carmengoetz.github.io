@@ -87,6 +87,27 @@ to {
     }
 }
 
+.glitch__skills:hover {
+    animation: glitch-skew 1s infinite linear alternate-reverse;
+
+    &::before{
+        @include glitchCopy;
+        left: .5px;
+        top: 20px;
+        text-shadow: -1px 0 $orchid;
+        clip: rect(44px, 450px, 56px, 0);
+        animation: glitch-anim 3s infinite linear alternate-reverse;
+    }
+
+    &::after {
+        @include glitchCopy;
+        left: -.5px;
+        top: 20px;
+        text-shadow: -1px 0 $orchid, 1px 1px $orchid;
+        animation: glitch-anim2 1s infinite linear alternate-reverse;
+    }
+}
+
 @keyframes glitch-skew {
     $steps: 20;
     @for $i from 0 through $steps {

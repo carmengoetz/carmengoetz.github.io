@@ -1,25 +1,38 @@
 <template>
-  <div class="row fade-in">
-    <Tabs v-model="selectedTab" class="skills__tabs">
-      <Tab
-        class="skills__tab"
-        v-for="(skill, i) in skills"
-        :key="`skill${i}`"
-        :val="skill.title"
-        :label="skill.title"
-        :indicator="true"
-      />
-    </Tabs>
-    <TabPanels v-model="selectedTab" :animate="true" :swipeable="true">
-      <TabPanel v-for="(skill, i) in skills" :key="`skill${i}`" :val="skill.title">
+  <div>
+    <div class="skills__desktop row fade-in">
+      <Tabs v-model="selectedTab" class="skills__tabs">
+        <Tab
+          class="skills__tab glitch__skills"
+          v-for="(skill, i) in skills"
+          :key="`skill${i}`"
+          :val="skill.title"
+          :label="skill.title"
+          :data-text="skill.title"
+          :indicator="true"
+        />
+      </Tabs>
+      <TabPanels v-model="selectedTab" :animate="true" :swipeable="true">
+        <TabPanel v-for="(skill, i) in skills" :key="`skill${i}`" :val="skill.title">
+          <Skill
+            :key="skills[i].title"
+            :description="skills[i].description"
+            :icon="skills[i].icon"
+            class="skills__skill"
+          />
+        </TabPanel>
+      </TabPanels>
+    </div>
+    <div class="skills__mobile">
+      <div v-for="(skill, i) in skills" :key="`skill${i}`">
+        <h3 class="skills__title">{{ skill.title }}</h3>
         <Skill
-          :key="skills[i].title"
           :description="skills[i].description"
           :icon="skills[i].icon"
           class="skills__skill"
         />
-      </TabPanel>
-    </TabPanels>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -92,24 +105,46 @@ export default {
 
 <style scoped lang="scss">
 .skills {
-  &__tab {
-    color: $blue-jeans;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
   @media (min-width: 768px) {
+    &__mobile {
+      display: none;
+    }
     &__tabs {
       margin: 0 auto;
     }
 
+    &__tab {
+      font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol", "Noto Color Emoji";
+
+      color: $blue-jeans;
+      padding: 10px;
+      cursor: pointer;
+    }
+
     &__skill {
-      margin: 30px auto 0 auto;
+      margin: 30px 30px 0 30px;
     }
   }
-  .active-tab {
+  @media (max-width: 768px) {
+    &__desktop {
+      display: none;
+    }
+    &__title {
+      margin: 0 auto;
+      color: $blue-jeans;
+    }
+    &__skill {
+      margin: 30px 30px 60px;
+    }
+  }
+
+  .active {
     border-width: 0px;
-    border-top-width: 2px;
+    border-bottom-width: 2px;
     border-style: solid;
+    border-color: $blue-jeans;
   }
 }
 </style>
