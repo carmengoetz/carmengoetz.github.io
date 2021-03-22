@@ -105,10 +105,17 @@ export default {
 
 .form-control {
   padding: 20px;
-  color: $orchid;
+  color: $blue-jeans;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  border-radius: 0;
+  border: 2px solid $dark-orchid;
+  background-color: transparent;
+  letter-spacing: 2px;
 
   &::placeholder {
-    color: $orchid;
+    color: $blue-jeans;
   }
 
   &__input {
@@ -116,13 +123,14 @@ export default {
   }
 
   &__text {
-    height: 230px;
+    height: 234px;
   }
 
   &:focus {
     border-color: $orchid;
     -webkit-box-shadow: none;
     box-shadow: none;
+    background-color: transparent;
   }
 }
 </style>
