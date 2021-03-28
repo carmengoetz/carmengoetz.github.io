@@ -54,12 +54,12 @@ export default {
             id: "projectsModal1",
             project: "My own personal website portfolio.",
             image: {
-              name: "carmen-goetz.png",
+              name: "carmen-goetz2.png",
               alt: "Carmen Goetz",
             },
-            date: "February 2019",
+            date: "March 2021",
             description:
-              "My own personal website, to show my skills and abilities, and display projects I am proud of. I took inspiration from the <a href='https://startbootstrap.com/themes/agency/' target='_blank'>agency</a> bootstrap template. I created this website with HTML, CSS, JavaScript, jquery, PHP, and Bootstrap<br />",
+              "My own personal website, to show my skills and abilities, and display projects I am proud of.",
           },
           image: {
             name: "carmen-goetz-thumb.png",
@@ -88,22 +88,40 @@ export default {
         {
           modal: {
             id: "projectsModal3",
-            project: "Business Website for Yoga Instructor",
+            project: "Portfolio for writer, artists, game designer",
             image: {
-              name: "abundantly-ethan.jpg",
-              alt: "",
+              name: "the-dewsletter.png",
+              alt: "The Dewsletter",
             },
             date: "In Progress",
-            description:
-              "Business website for a local yoga instructor, Abundantly Ethan. This website will showcase services available, pricing, and calendar for customers to view at any given time. The project is still in development. I am creating this website using the ReactJS framework.",
+            description: "",
           },
           image: {
-            name: "abundantly-ethan-thumb.jpg",
-            alt: "Abundantly Ethan",
+            name: "the-dewsletter-thumb.png",
+            alt: "The Dewsletter",
           },
-          client: "Abundantly Ethan",
+          client: "The Dewsletter",
           category: "Web Development",
         },
+        // Not ready to be displayed
+        // {
+        //   modal: {
+        //     id: "projectsModal4",
+        //     project: "Portfolio for Graphic and Web Designer",
+        //     image: {
+        //       name: "creative-reyne.png",
+        //       alt: "Creative Reyne",
+        //     },
+        //     date: "In Progress",
+        //     description: "",
+        //   },
+        //   image: {
+        //     name: "creative-reyne-thumb.gif",
+        //     alt: "Creative Reyne",
+        //   },
+        //   client: "Creative Reyne",
+        //   category: "Web Development",
+        // },
       ],
     };
   },

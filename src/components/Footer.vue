@@ -69,9 +69,7 @@ export default {
     margin-top: 40px;
     font-size: 90%;
     line-height: 60px;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: $font-primary;
     color: $blue-jeans;
   }
 

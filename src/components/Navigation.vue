@@ -74,7 +74,6 @@ export default {
 
 <style scoped lang="scss">
 @import "../styles/_variables.scss";
-@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
 
 .navbar {
   background-color: $xiketic;
@@ -85,7 +84,7 @@ export default {
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 3px;
-  font-family: "DotGothic16", sans-serif;
+  font-family: $font-brand;
   width: 200px;
   padding: 0 12px;
   margin: 0 40px -36px 40px;
@@ -114,9 +113,7 @@ export default {
   padding: 0.75em 0;
   letter-spacing: 2px;
   color: $dark-orchid;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: $font-primary;
 }
 
 .nav-link:hover {

@@ -35,14 +35,14 @@ const skills = [
     title: "Technologies",
     description:
       "PHP, JavaScript, HTML5/CSS3, Vue 3, ReactJS, Laravel, Symphony, CakePHP, Java, C#, C, Android Studio, Xamarin, Swift, MySQL, Oracle, GoogleOAuth 2.0, Apple REST API, Google Cloud Platform, Nginx",
-    icon: "desktop",
+    icon: "code",
   },
   {
     index: 1,
     title: "Methodologies",
     description:
       "Agile development, Test Driven Design, Domain Driven Design, Object oriented design & development",
-    icon: "code",
+    icon: "project-diagram",
   },
   {
     index: 2,
@@ -56,7 +56,7 @@ const skills = [
     title: "Fundamentals",
     description:
       "Candid communicator, self motivated, team player, exceptionally curious, full of ambition, goal oriented,",
-    icon: "database",
+    icon: "comments",
   },
 ];
 
@@ -100,6 +100,13 @@ export default {
   @media (min-width: 768px) {
     &__tabs {
       margin: 0 auto;
+    }
+
+    &__tab {
+      font-family: $font-primary;
+      color: $blue-jeans;
+      padding: 10px;
+      cursor: pointer;
     }
 
     &__skill {

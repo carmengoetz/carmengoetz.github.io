@@ -83,9 +83,7 @@ export default {
       font-style: italic;
       color: $russian-violet;
       margin: 0;
-      font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-        "Segoe UI Symbol", "Noto Color Emoji";
+      font-family: $font-secondary;
     }
   }
 }

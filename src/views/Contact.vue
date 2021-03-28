@@ -106,9 +106,7 @@ export default {
 .form-control {
   padding: 20px;
   color: $blue-jeans;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: $font-primary;
   border-radius: 0;
   border: 2px solid $dark-orchid;
   background-color: transparent;

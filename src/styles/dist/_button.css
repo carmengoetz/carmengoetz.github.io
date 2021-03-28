@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat&family=Roboto+Mono:wght@700&family=Roboto+Slab&display=swap");
 .button {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  color: white;
+  color: #4caae8ff;
   text-decoration: none;
   position: relative;
   background: transparent;

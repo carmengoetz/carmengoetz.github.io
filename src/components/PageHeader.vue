@@ -47,7 +47,7 @@ export default {
     font-weight: 700;
     line-height: 50px;
     margin-bottom: 25px;
-    font-family: "Roboto Mono", monospace;
+    font-family: $font-extra;
   }
 }
 
@@ -71,7 +71,7 @@ export default {
       font-weight: 700;
       line-height: 75px;
       margin-bottom: 50px;
-      font-family: "Roboto Mono", monospace;
+      font-family: $font-extra;
     }
 
     &__not-found {

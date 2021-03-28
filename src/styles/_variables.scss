@@ -1,7 +1,4 @@
-$primary: #265F65;
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat&family=Roboto+Mono:wght@700&family=Roboto+Slab&display=swap');
 
 $xiketic: #050122ff;
 $russian-violet: #1c0a48ff;
@@ -15,3 +12,8 @@ $blue-jeans: #4caae8ff;
 $mobile-breakpoint: 768px;
 $tablet-breakpoint: 992px;
 $desktop-breakpoint: 1200px;
+
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Roboto Slab', serif;
+$font-brand: 'DotGothic16', sans-serif;
+$font-extra: "Roboto Mono", monospace;
