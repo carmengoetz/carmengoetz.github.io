@@ -1,11 +1,11 @@
 <template>
   <section class="home">
-    <div class="row fade-in">
+    <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">About Carmen</h2>
       </div>
     </div>
-    <div class="row fade-in">
+    <div class="row">
       <div class="col-lg-12 text-center">
         <div class="home__photo">
           <img
@@ -16,16 +16,20 @@
         </div>
       </div>
     </div>
-    <div class="row fade-in">
+    <div class="row">
       <div class="col-lg-8 mx-auto text-center">
-        <h3 class="section-subheading home__description">
-          I am a full stack software developer at
-          <a src="https://7shifts.com" target="_blank">7shifts</a> in Saskatoon. I am a
-          technology enthusiast, lover of animals and nature, and a Nintendo fiend!
+        <h3
+          class="section-subheading home__description glitch-in"
+          data-text="I am a full stack software 
+          developer at 7shifts in Saskatoon. I am a technology enthusiast, lover of animals and 
+          nature, and a Nintendo fiend!"
+        >
+          I am a full stack software developer at 7shifts in Saskatoon. I am a technology
+          enthusiast, lover of animals and nature, and a Nintendo fiend!
         </h3>
       </div>
     </div>
-    <div class="row fade-in">
+    <div class="row">
       <div class="col-lg-8 mx-auto">
         <a
           class="button"
@@ -40,12 +44,12 @@
 </template>
 
 <script>
-import { fadeInElements } from "@/js/animations.js";
+import { glitchInElements } from "@/js/animations.js";
 
 export default {
   name: "Home",
   setup() {
-    return fadeInElements();
+    return glitchInElements();
   },
 };
 </script>

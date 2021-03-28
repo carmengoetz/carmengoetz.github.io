@@ -10,7 +10,7 @@
           :image="panel.image"
           :description="panel.description"
           :inverted="panel.inverted"
-          class="fade-in"
+          class=""
         />
       </ul>
     </div>
@@ -19,7 +19,7 @@
 
 <script>
 import Panel from "@/components/career/Panel.vue";
-import { fadeInElements } from "@/js/animations.js";
+import { glitchInElements } from "@/js/animations.js";
 
 export default {
   name: "Timeline",
@@ -27,7 +27,7 @@ export default {
     Panel,
   },
   setup() {
-    return fadeInElements();
+    return glitchInElements();
   },
   data: () => {
     return {

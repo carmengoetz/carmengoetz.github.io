@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="skills__desktop row fade-in">
+    <div class="skills__desktop row ">
       <Tabs v-model="selectedTab" class="skills__tabs">
         <Tab
           class="skills__tab glitch__skills"
@@ -38,7 +38,7 @@
 
 <script>
 import Skill from "@/components/skills/Skill.vue";
-import { fadeInElements } from "@/js/animations.js";
+import { glitchInElements } from "@/js/animations.js";
 import { Tabs, Tab, TabPanels, TabPanel } from "vue3-tabs";
 import { reactive, toRefs } from "vue";
 
@@ -87,7 +87,7 @@ export default {
       selectedTab: skills[0].index,
     });
 
-    const fadeIn = fadeInElements();
+    const fadeIn = glitchInElements();
 
     return {
       fadeIn,

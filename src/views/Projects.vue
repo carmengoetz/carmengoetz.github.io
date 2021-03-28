@@ -4,7 +4,10 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Projects</h2>
-          <h3 class="section-subheading projects__description">
+          <h3
+            class="section-subheading projects__description glitch-in"
+            data-text="Projects, personal or business, completed or in progress"
+          >
             Projects, personal or business, completed or in progress
           </h3>
         </div>
@@ -39,12 +42,16 @@
 <script>
 import Item from "@/components/projects/Item.vue";
 import Modal from "@/components/projects/Modal.vue";
+import { glitchInElements } from "@/js/animations.js";
 
 export default {
   name: "Projects",
   components: {
     Item,
     Modal,
+  },
+  setup() {
+    return glitchInElements();
   },
   data: () => {
     return {

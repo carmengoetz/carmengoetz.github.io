@@ -1,6 +1,6 @@
 <template>
   <section class="skills">
-    <div class="row fade-in">
+    <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading skills__heading">Skills</h2>
       </div>
@@ -11,7 +11,7 @@
 
 <script>
 import SkillTabs from "@/components/skills/SkillTabs.vue";
-import { fadeInElements } from "@/js/animations.js";
+import { glitchInElements } from "@/js/animations.js";
 
 export default {
   name: "Skills",
@@ -19,7 +19,7 @@ export default {
     SkillTabs,
   },
   setup() {
-    return fadeInElements();
+    return glitchInElements();
   },
   data: () => {
     return {

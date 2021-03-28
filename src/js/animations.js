@@ -1,14 +1,14 @@
 import { onMounted, onUnmounted } from 'vue'
 
-export function fadeInElements(){
-    var fadeInElements = []
+export function glitchInElements(){
+    var glitchInElements = []
 
     const handleScroll = () => {
-      for (var i = 0; i < fadeInElements.length; i++) {
-        var elem = fadeInElements[i]
+      for (var i = 0; i < glitchInElements.length; i++) {
+        var elem = glitchInElements[i]
         if (isElemVisible(elem)) {
-          elem.style.opacity = '1'
-          fadeInElements.splice(i, 1) // only allow it to run once
+          elem.classList.add('glitchy')
+          glitchInElements.splice(i, 1) // only allow it to run once
         }
 }
     }
@@ -22,7 +22,7 @@ export function fadeInElements(){
 
 
     onMounted(() => {
-      fadeInElements = Array.from(document.getElementsByClassName('fade-in'));
+      glitchInElements = Array.from(document.getElementsByClassName('glitch-in'));
       document.addEventListener('scroll', handleScroll)
       handleScroll()
     })

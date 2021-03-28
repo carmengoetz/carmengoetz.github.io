@@ -1,11 +1,11 @@
 <template>
   <section class="career">
-    <div class="row fade-in">
+    <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">Career Timeline</h2>
       </div>
     </div>
-    <div class="row fade-in">
+    <div class="row">
       <div class="col-lg-8 mx-auto text-center">
         <h3 class="section-subheading career__description">
           If you want to learn more about my journey in the tech industry, scroll for a
@@ -19,7 +19,7 @@
 
 <script>
 import Timeline from "@/components/career/Timeline.vue";
-import { fadeInElements } from "@/js/animations.js";
+import { glitchInElements } from "@/js/animations.js";
 
 export default {
   name: "Career",
@@ -27,7 +27,7 @@ export default {
     Timeline,
   },
   setup() {
-    return fadeInElements();
+    return glitchInElements();
   },
 };
 </script>
