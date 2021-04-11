@@ -59,7 +59,7 @@ export default {
             },
             date: "March 2021",
             description:
-              "My own personal website, to show my skills and abilities, and display projects I am proud of.",
+              "My own personal website, to show my skills and abilities, and display projects I am proud of. I built it using <a href='https://vuejs.org/' target='_blank'>VueJS</a>, <a href='https://router.vuejs.org/' target='_blank'>Vue Router</a>, and <a href='https://getbootstrap.com/' target='_blank'>Bootstrap</a>. I designed it in a way that would display my personality, while also showcasing my skills. The logo was designed and created by <a href='https://www.creativereyne.ca' target='_blank'>Creative Reyne</a>.",
           },
           image: {
             name: "carmen-goetz-thumb.png",
@@ -94,7 +94,8 @@ export default {
               alt: "The Dewsletter",
             },
             date: "In Progress",
-            description: "",
+            description:
+              "A portfolio website for a writer, artist and game designer made with wordpress. I am working on a custom wordpress theme to display Dew's personality to their potential clients. This project is a work in progress.",
           },
           image: {
             name: "the-dewsletter-thumb.png",

@@ -19,15 +19,11 @@
 
 <script>
 import Timeline from "@/components/career/Timeline.vue";
-import { glitchInElements } from "@/js/animations.js";
 
 export default {
   name: "Career",
   components: {
     Timeline,
-  },
-  setup() {
-    return glitchInElements();
   },
 };
 </script>

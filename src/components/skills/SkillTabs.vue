@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="skills__desktop row ">
+    <div class="skills__desktop row">
       <Tabs v-model="selectedTab" class="skills__tabs">
         <Tab
           class="skills__tab glitch__skills"
@@ -38,7 +38,6 @@
 
 <script>
 import Skill from "@/components/skills/Skill.vue";
-import { glitchInElements } from "@/js/animations.js";
 import { Tabs, Tab, TabPanels, TabPanel } from "vue3-tabs";
 import { reactive, toRefs } from "vue";
 
@@ -68,7 +67,7 @@ const skills = [
     index: 3,
     title: "Fundamentals",
     description:
-      "Candid communicator, self motivated, team player, exceptionally curious, full of ambition, goal oriented,",
+      "Candid communicator, self motivated, team player, exceptionally curious, full of ambition, and goal oriented",
     icon: "comments",
   },
 ];
@@ -87,10 +86,7 @@ export default {
       selectedTab: skills[0].index,
     });
 
-    const fadeIn = glitchInElements();
-
     return {
-      fadeIn,
       skills,
       ...toRefs(state),
     };

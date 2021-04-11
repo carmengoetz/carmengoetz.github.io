@@ -18,14 +18,11 @@
     </div>
     <div class="row">
       <div class="col-lg-8 mx-auto text-center">
-        <h3
-          class="section-subheading home__description glitch-in"
-          data-text="I am a full stack software 
-          developer at 7shifts in Saskatoon. I am a technology enthusiast, lover of animals and 
-          nature, and a Nintendo fiend!"
-        >
+        <h3 class="section-subheading home__description">
           I am a full stack software developer at 7shifts in Saskatoon. I am a technology
-          enthusiast, lover of animals and nature, and a Nintendo fiend!
+          enthusiast, lover of animals and nature, and a Nintendo fiend! When I'm not
+          spending time with my dog Tsuki and my cat Lily, I can usually be found
+          gardening, decorating my home, and working on fun projects.
         </h3>
       </div>
     </div>
@@ -44,13 +41,8 @@
 </template>
 
 <script>
-import { glitchInElements } from "@/js/animations.js";
-
 export default {
   name: "Home",
-  setup() {
-    return glitchInElements();
-  },
 };
 </script>
 

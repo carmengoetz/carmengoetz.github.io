@@ -137,25 +137,6 @@ to {
     }
 }
 
-// .glitch__brand:hover {
-//         animation: glitch-skew 1s infinite linear alternate-reverse;
-
-//         &::before{
-//             @include glitchCopy;
-//             left: 2px;
-//             text-shadow: -2x 0 $orchid;
-//             clip: rect(44px, 450px, 56px, 0);
-//             animation: glitch-anim 5s infinite linear alternate-reverse;
-//         }
-    
-//         &::after {
-//             @include glitchCopy;
-//             left: 2px;
-//             text-shadow: -2px 0 white, 2px 2px $orchid;
-//             animation: glitch-anim2 1s infinite linear alternate-reverse;
-//         }
-//     }
-
 .glitch__footer {
     transform: translate(-20%, 15%);
     &:hover, &:focus, &:active {
@@ -168,9 +149,8 @@ to {
             transform: translate(-10%, 20%);
             color: $orchid;
             animation: glitch-anim4 4s infinite linear alternate-reverse;
-            }
+        }
     }
-
 }
 
 .glitch__scroll {
@@ -190,7 +170,6 @@ to {
             animation: glitch-anim4 4s infinite linear alternate-reverse;
         }
     }
-
 }
 
 @keyframes glitch-anim3 {
@@ -211,46 +190,3 @@ to {
     }
 }
 /*endregion GLITCH*/
-
-.glitchy {
-    position: relative;
-  }
-  @keyframes noise-anim {
-    $steps: 20;
-    @for $i from 0 through $steps {
-      #{percentage($i*(1/$steps))} {
-        clip: rect(random(100) + px, 9999px, random(100) + px, 0);
-      }
-    }
-  }
-  .glitchy:after {
-    content: attr(data-text);
-    position: absolute;
-    left: 1px;
-    text-shadow: -0.5px 0 white;
-    top: 0;
-    color: $blue-jeans;
-    overflow: hidden;
-    clip: rect(0, 900px, 0, 0);
-    animation: noise-anim 2s 3s linear alternate-reverse;
-  }
-  
-  @keyframes noise-anim-2 {
-    $steps: 20;
-    @for $i from 0 through $steps {
-      #{percentage($i*(1/$steps))} {
-        clip: rect(random(100) + px, 9999px, random(100) + px, 0);
-      }
-    }
-  }
-  .glitchy:before {
-    content: attr(data-text);
-    position: absolute;
-    left: 1px;
-    text-shadow: 0.5px 0 $orchid;
-    top: 0;
-    color: $blue-jeans;
-    overflow: hidden;
-    clip: rect(0, 900px, 0, 0);
-    animation: noise-anim-2 3s 3s linear alternate-reverse;
-  }

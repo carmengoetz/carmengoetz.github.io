@@ -11,15 +11,11 @@
 
 <script>
 import SkillTabs from "@/components/skills/SkillTabs.vue";
-import { glitchInElements } from "@/js/animations.js";
 
 export default {
   name: "Skills",
   components: {
     SkillTabs,
-  },
-  setup() {
-    return glitchInElements();
   },
   data: () => {
     return {

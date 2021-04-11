@@ -19,15 +19,11 @@
 
 <script>
 import Panel from "@/components/career/Panel.vue";
-import { glitchInElements } from "@/js/animations.js";
 
 export default {
   name: "Timeline",
   components: {
     Panel,
-  },
-  setup() {
-    return glitchInElements();
   },
   data: () => {
     return {
@@ -76,7 +72,8 @@ export default {
           year: "2020",
           heading: "Joining 7shifts' Diversity Equity and Inclusion committee ",
           image: require("../../assets/career/7shifts-logo.png"),
-          description: "",
+          description:
+            "7shifts started its DE&I committee in 2020, and I joined it as a member in October of that year. I have a passion for DE&I, and have a lot of ideas as to how we as a company can work towards a more inclusive community. I have made many contricutions to the committee throughout my time on the committee.",
           inverted: true,
         },
       ],

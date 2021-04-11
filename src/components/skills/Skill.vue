@@ -27,8 +27,12 @@ export default {
   }
 
   &__description {
-    margin: 12px auto;
+    margin: 12px 100px;
     color: white;
+
+    @media (max-width: $mobile-breakpoint) {
+      margin: 12px auto;
+    }
   }
 }
 </style>
