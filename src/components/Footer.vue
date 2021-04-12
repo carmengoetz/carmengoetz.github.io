@@ -7,18 +7,31 @@
       <div class="col-md-4">
         <ul class="list-inline social-buttons footer__buttons">
           <li v-for="social in socials" :key="social.name" class="list-inline-item">
-            <a :href="social.link" target="_blank" class="footer__link glitch__footer">
+            <a
+              :href="social.link"
+              :alt="social.name"
+              target="_blank"
+              rel="noreferrer"
+              class="footer__link glitch__footer"
+            >
               <fa
                 :icon="social.icon"
+                :alt="social.name"
                 type="fab"
                 class="footer__icon glitch__footer glitch__footer--effect-1"
               ></fa>
               <fa
                 :icon="social.icon"
+                :alt="social.name"
                 type="fab"
                 class="footer__icon glitch__footer glitch__footer--effect-2"
               ></fa>
-              <fa :icon="social.icon" type="fab" class="footer__icon glitch__footer"></fa>
+              <fa
+                :icon="social.icon"
+                :alt="social.name"
+                type="fab"
+                class="footer__icon glitch__footer"
+              ></fa>
             </a>
           </li>
         </ul>
