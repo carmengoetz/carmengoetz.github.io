@@ -60,7 +60,7 @@ export default {
 
   &__icon {
     width: 43.8%;
-    margin: 12.5% auto;
+    margin: 25% auto;
     text-align: center;
     color: white;
   }

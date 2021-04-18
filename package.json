@@ -25,6 +25,7 @@
     "sass-loader": "10.1.1",
     "ssri": "^8.0.1",
     "vue": "^3.0.0",
+    "vue-cli-plugin-sitemap": "^2.3.0",
     "vue-router": "^4.0.0-0",
     "vue-template-compiler": "^2.6.12",
     "vue3-tabs": "^0.1.9"

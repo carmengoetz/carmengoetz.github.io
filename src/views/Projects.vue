@@ -62,7 +62,7 @@ export default {
               "My own personal website, to show my skills and abilities, and display projects I am proud of. I built it using <a href='https://vuejs.org/' target='_blank'>VueJS</a>, <a href='https://router.vuejs.org/' target='_blank'>Vue Router</a>, and <a href='https://getbootstrap.com/' target='_blank'>Bootstrap</a>. I designed it in a way that would display my personality, while also showcasing my skills. The logo was designed and created by <a href='https://www.creativereyne.ca' target='_blank'>Creative Reyne</a>.",
           },
           image: {
-            name: "carmen-goetz-thumb.png",
+            name: "carmen-goetz-thumb2.png",
             alt: "Carmen Goetz",
           },
           client: "Carmen Goetz",
@@ -79,7 +79,7 @@ export default {
               "A social media web application with an emphasis on mental health and awareness. Users have the ability to aggregate data about their mental wellness through the web application. When a user has created an account, every time they log on they are asked to enter data about their mental well being for that day. Users can view their mental health history, and give friends or wellness professionals permission to view it also. The application would be would be marketed to wellness professionals, so that they have the ability to view the history of patients, and users can find resources available to them. The main priority with the application is for users to be able to see their statistics and know what kinds of triggers there are. The purpose of the web application is to provide information and resources to the users to help with their mental health. This project was created with a group of 6 people, using the Symphony framework. Since this was a school project, it was never put into production. The source code is available to be viewed in my GitHub.",
           },
           image: {
-            name: "refresh-thumb.png",
+            name: "refresh-thumb2.png",
             alt: "Refresh Wellness",
           },
           client: "Refresh",
@@ -98,7 +98,7 @@ export default {
               "A portfolio website for a writer, artist and game designer made with wordpress. I am working on a custom wordpress theme to display Dew's personality to their potential clients. This project is a work in progress.",
           },
           image: {
-            name: "the-dewsletter-thumb.png",
+            name: "the-dewsletter-thumb2.png",
             alt: "The Dewsletter",
           },
           client: "The Dewsletter",
