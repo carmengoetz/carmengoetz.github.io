@@ -19,10 +19,14 @@
     <div class="row">
       <div class="col-lg-8 mx-auto text-center">
         <h3 class="section-subheading home__description">
-          I am a full stack software developer at 7shifts in Saskatoon. I am a technology
-          enthusiast, lover of animals and nature, and a Nintendo fiend! When I'm not
-          spending time with my dog Tsuki and my cat Lily, I can usually be found
-          gardening, decorating my home, and working on fun projects.
+          Hi and welcome! I’m Carmen Goetz (they/them), a technology enthusiast excited
+          about creating and tackling new challenges. From a young age, I’ve had a knack
+          for 1’s and 0’s and knew that I wanted to pursue a career in technology.
+          <br /><br />
+          When I’m not behind the keyboard, I’m usually found spending time with [insert
+          breed of doggo] Tsuki, and my [insert breed of catto] Lily. I have a green thumb
+          and love gardening and expanding my plant collection and love to work on fun
+          projects that allow me to hone my creative skills.
         </h3>
       </div>
     </div>

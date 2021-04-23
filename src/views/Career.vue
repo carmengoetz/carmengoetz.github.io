@@ -8,8 +8,8 @@
     <div class="row">
       <div class="col-lg-8 mx-auto text-center">
         <h3 class="section-subheading career__description">
-          If you want to learn more about my journey in the tech industry, scroll for a
-          brief description of my past five years.
+          If you’re curious about my time in the technology industry, scroll down and join
+          me on my journey!
         </h3>
       </div>
     </div>

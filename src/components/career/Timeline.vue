@@ -33,7 +33,7 @@ export default {
           heading: "Enrolling in CST",
           image: require("../../assets/career/saskpolytechlogo.jpg"),
           description:
-            "I have always had a knack for 1s and 0s, and I knew I wanted to pursue a career of creating things using computers, but I was unsure of what exactly. So I decided to enroll in Computer Systems Technology at Saskpolytech. It didn't take long for me to realize my passion for Web Development!",
+            "I’ve always had a knack for 1s and 0s, and knew that I wanted to pursue a career of creating things using computers. I wasn’t sure exactly how or what, but I decided to take a chance and start by enrolling in the Computer Systems Technology Diploma at Saskatchewan Polytechnic. As I started in my classes, it didn’t take me long to discover that I found my passion was in Web Development! ",
           inverted: false,
         },
         {
@@ -41,7 +41,7 @@ export default {
           heading: "Getting involved at Canada Learning code",
           image: require("../../assets/career/CLClogo.png"),
           description:
-            "Through networking with people in the industry, I heard about Canada Learning Code (CLC, formerly Ladies Learning Code). Since then, I have mentored at many of their workshops, and even instructed a workshop myself. This required me to present theory, give code examples and exercises, and  assist learners with the content, as well as provide 1-on-1 support for learners, adults and children, throughout day long workshops",
+            "I heard about Canada Learning Code (CLC, formerly known as Ladies learning Code) through networking with other developers in the community. After chatting with a few of the developers to learn more, I knew I had to get involved. Since then, I have become a mentor at various workshops on entry level subjects (HTML/CSS, JavaScript, Responsive Development, etc), and even instructed a workshop myself.",
           inverted: true,
         },
         {
@@ -49,7 +49,7 @@ export default {
           heading: "Graduation",
           image: require("../../assets/career/grad.jpg"),
           description:
-            "In May of 2019, I graduated from Saskpolytech with a Diploma in Computer Systems technology! I went full force into the industry, ready to show what I had learnt in the past three years.",
+            "In May of 2019, I graduated from Saskpolytechnic with a Diploma in Computer Systems Technology! I went full force into the industry at my position at 7shifts and was ready to show and implement what I had learned during the past three years.",
           inverted: false,
         },
         {
@@ -57,7 +57,7 @@ export default {
           heading: "Starting at 7shifts",
           image: require("../../assets/career/7shifts-logo.png"),
           description:
-            "Before I graduated, I was hired on as a software developer at 7shifts in Saskatoon. At 7shifts I have been able to grown in my career with many different opportunities. I have been involved on difficult but rewarding projects and presenting solutions and leading them to help execute on the team / department / company roadmap. While doing that, I have been able to learn from intelligent mentors, and pair and collaborate with exceptional people and facilitate knowledge transfers and continual learning.",
+            "In the final weeks before graduation, I was hired on as a Software Developer at 7shifts, in Saskatoon, Saskatchewan.  During the last 3 years of my career at 7shifts, I’ve grown into my career with a variety of opportunities, such as X, Y, Z. I have been involved in challenging, but rewarding projects and presented solutions that have been implemented into our teams, in the departments and on the company roadmap. While accomplishing these milestones in my career, I’ve had the opportunity to continually grow and learn from intelligent mentors and pair and collaborate with exceptional people who have facilitated knowledge transfer and continual learning in my current position.",
           inverted: true,
         },
         {
@@ -65,7 +65,7 @@ export default {
           heading: "Chapter Coordinator for Canada Learning Code",
           image: require("../../assets/career/CLClogo.png"),
           description:
-            "In the summer of 2019, I was given the opportunity to be the Coordinator for Saskatoon's Chapter. I would streamline and run Canada Learning Code learning projectss and community events, manage social media accounts to promote events and reach out to the community, and aquire learners, mentors, and facilitators for upcoming events utilizing my abilities to network within the community.",
+            "n the summer of 2019, I was presented with the opportunity to be the Coordinator for Saskatoon’s Canada Learning Code Chapter. In this position, I would streamline and run Canada learning Code educational projects and community events. In addition, I managed and promoted events on our social media accounts and networked with the community to acquire mentors, facilitators and curious new learners for upcoming events.",
           inverted: false,
         },
         {
@@ -73,7 +73,7 @@ export default {
           heading: "Joining 7shifts' Diversity Equity and Inclusion committee ",
           image: require("../../assets/career/7shifts-logo.png"),
           description:
-            "7shifts started its DE&I committee in 2020, and I joined it as a member in October of that year. I have a passion for DE&I, and have a lot of ideas as to how we as a company can work towards a more inclusive community. I have made many contricutions to the committee throughout my time on the committee.",
+            "In honing my skills for community involvement and my passion for Diversity, Equity and Inclusion (DE&I) I joined the committee in October of 2020 to join my colleagues in becoming a more inclusive community. Since the inception of the committee, I’ve made various contributions that have been implemented, such as X,Y and Z.",
           inverted: true,
         },
       ],
