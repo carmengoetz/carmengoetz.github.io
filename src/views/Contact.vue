@@ -4,7 +4,8 @@
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">Contact Me</h2>
         <h3 class="section-subheading contact__description">
-          Get in touch on me for any inquiries you may have!
+          Get in touch with me for any inquiries you may have! I look forward to hearing
+          from you soon.
         </h3>
       </div>
     </div>

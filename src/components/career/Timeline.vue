@@ -57,7 +57,7 @@ export default {
           heading: "Starting at 7shifts",
           image: require("../../assets/career/7shifts-logo.png"),
           description:
-            "In the final weeks before graduation, I was hired on as a Software Developer at 7shifts, in Saskatoon, Saskatchewan.  During the last 3 years of my career at 7shifts, I’ve grown into my career with a variety of opportunities, such as X, Y, Z. I have been involved in challenging, but rewarding projects and presented solutions that have been implemented into our teams, in the departments and on the company roadmap. While accomplishing these milestones in my career, I’ve had the opportunity to continually grow and learn from intelligent mentors and pair and collaborate with exceptional people who have facilitated knowledge transfer and continual learning in my current position.",
+            "In the final weeks before graduation, I was hired on as a Software Developer at 7shifts, in Saskatoon, Saskatchewan.  During the last 3 years of my career at 7shifts, I’ve grown into my career with a variety of opportunities. I have been involved in challenging, but rewarding projects and presented solutions that have been implemented into our teams, in the departments and on the company roadmap. While accomplishing these milestones in my career, I’ve had the opportunity to continually grow and learn from intelligent mentors and pair and collaborate with exceptional people who have facilitated knowledge transfer and continual learning in my current position.",
           inverted: true,
         },
         {
@@ -73,7 +73,7 @@ export default {
           heading: "Joining 7shifts' Diversity Equity and Inclusion committee ",
           image: require("../../assets/career/7shifts-logo.png"),
           description:
-            "In honing my skills for community involvement and my passion for Diversity, Equity and Inclusion (DE&I) I joined the committee in October of 2020 to join my colleagues in becoming a more inclusive community. Since the inception of the committee, I’ve made various contributions that have been implemented, such as X,Y and Z.",
+            "In honing my skills for community involvement and my passion for Diversity, Equity and Inclusion (DE&I) I joined the committee in October of 2020 to join my colleagues in becoming a more inclusive community. Since the inception of the committee, I’ve made various contributions that have been implemented, such as creating and analysing a benchmarking survey, completed a talk on genderend language, and managing a mental health channel for the company.",
           inverted: true,
         },
       ],

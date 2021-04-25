@@ -33,10 +33,6 @@
                 <li>Client: {{ client }}</li>
                 <li>Category: {{ category }}</li>
               </ul>
-              <!-- <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <fa :icon="times" type="fas" />
-                  Close Project
-                </button> -->
             </div>
           </div>
         </div>

@@ -2,7 +2,9 @@
   <div class="container footer">
     <div class="row">
       <div class="col-md-4">
-        <span class="footer__copyright">Copyright &copy; Carmen Goetz 2021</span>
+        <span class="footer__copyright"
+          >Copyright &copy; Carmen Goetz {{ new Date().getFullYear() }}</span
+        >
       </div>
       <div class="col-md-4">
         <ul class="list-inline social-buttons footer__buttons">

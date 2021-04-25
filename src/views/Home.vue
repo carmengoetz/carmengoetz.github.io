@@ -23,10 +23,10 @@
           about creating and tackling new challenges. From a young age, I’ve had a knack
           for 1’s and 0’s and knew that I wanted to pursue a career in technology.
           <br /><br />
-          When I’m not behind the keyboard, I’m usually found spending time with [insert
-          breed of doggo] Tsuki, and my [insert breed of catto] Lily. I have a green thumb
-          and love gardening and expanding my plant collection and love to work on fun
-          projects that allow me to hone my creative skills.
+          When I’m not behind the keyboard, I’m usually found spending time with my coon
+          hound cross Tsuki, and my torbie Lily. I have a green thumb and love gardening
+          and expanding my plant collection and love to work on fun projects that allow me
+          to hone my creative skills.
         </h3>
       </div>
     </div>

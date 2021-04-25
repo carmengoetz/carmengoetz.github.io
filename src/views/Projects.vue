@@ -52,14 +52,14 @@ export default {
         {
           modal: {
             id: "projectsModal1",
-            project: "My own personal website portfolio.",
+            project: "My portfolio.",
             image: {
               name: "carmen-goetz2.png",
               alt: "Carmen Goetz",
             },
             date: "March 2021",
             description:
-              "My own personal website, to show my skills and abilities, and display projects I am proud of. I built it using <a href='https://vuejs.org/' target='_blank'>VueJS</a>, <a href='https://router.vuejs.org/' target='_blank'>Vue Router</a>, and <a href='https://getbootstrap.com/' target='_blank'>Bootstrap</a>. I designed it in a way that would display my personality, while also showcasing my skills. The logo was designed and created by <a href='https://www.creativereyne.ca' target='_blank'>Creative Reyne</a>.",
+              "A website portfolio that showcased my creativity, talent and technical knowledge. Displayed on this website are some of the projects that I am proud to have worked on. This website was created using Vue.js, Vue Router and Bootstrap. I envisioned this website to express my personality and my passion for front-end web development. The logo for my website was designed and created by <a href='https://www.creativereyne.ca' target='_blank'>Creative Reyne</a>.",
           },
           image: {
             name: "carmen-goetz-thumb2.png",
@@ -71,12 +71,12 @@ export default {
         {
           modal: {
             id: "projectsModal2",
-            project: "Wellness Application created for Refresh as a school project.",
+            project: "Wellness Application",
             image: { name: "refresh2.png", alt: "User Profile" },
 
             date: "September 2017 - April 2018",
             description:
-              "A social media web application with an emphasis on mental health and awareness. Users have the ability to aggregate data about their mental wellness through the web application. When a user has created an account, every time they log on they are asked to enter data about their mental well being for that day. Users can view their mental health history, and give friends or wellness professionals permission to view it also. The application would be would be marketed to wellness professionals, so that they have the ability to view the history of patients, and users can find resources available to them. The main priority with the application is for users to be able to see their statistics and know what kinds of triggers there are. The purpose of the web application is to provide information and resources to the users to help with their mental health. This project was created with a group of 6 people, using the Symphony framework. Since this was a school project, it was never put into production. The source code is available to be viewed in my GitHub.",
+              "This project was created for Refresh, a local company in Saskatoon as part of a school project during my time at Saskatchewan Polytechnic. The intention of the project was a web application focusing on mental health and awareness and to create a solution that health and wellness providers can utilize to track the history of their patients.<br/><br/>When a user creates an account, each time they log on, they are asked to enter data about their mental well-being for the day. Users have the ability to add information and data about their mental wellness on the website and view their history from previous entries. They can also give friends or wellness professionals permission to view it, to see trends and to pinpoint areas that may need attention or further treatment.<br/><br/>The project was designed and developed in a group of 6 people using Symphony as part of a Final project for a class. The project was never put into production, but the source code is available in my GitHub.",
           },
           image: {
             name: "refresh-thumb2.png",
@@ -95,7 +95,7 @@ export default {
             },
             date: "In Progress",
             description:
-              "A portfolio website for a writer, artist and game designer made with wordpress. I am working on a custom wordpress theme to display Dew's personality to their potential clients. This project is a work in progress.",
+              "This portfolio website was created for a writer, artist and game designer using WordPress. Currently in progress, is a custom WordPress theme used to display Dew’s personality to their potential clients.",
           },
           image: {
             name: "the-dewsletter-thumb2.png",

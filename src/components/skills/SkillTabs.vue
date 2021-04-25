@@ -53,21 +53,21 @@ const skills = [
     index: 1,
     title: "Methodologies",
     description:
-      "Agile development, Test Driven Design, Domain Driven Design, Object oriented design & development",
+      "Agile development, Test Driven Design, Domain Driven Design, Object oriented design & development.",
     icon: "project-diagram",
   },
   {
     index: 2,
     title: "Version Control",
     description:
-      "Projects using Bit Bucket and GitHub. Commits are always well commented and documented",
+      "Projects using Bitbucket and GitHub. Commits are always well commented and documented.",
     icon: "code-branch",
   },
   {
     index: 3,
     title: "Fundamentals",
     description:
-      "Candid communicator, self motivated, team player, exceptionally curious, full of ambition, and goal oriented",
+      "Candid communicator, self-motivated, team player, exceptionally curious, full of ambition, and goal-oriented.",
     icon: "comments",
   },
 ];
