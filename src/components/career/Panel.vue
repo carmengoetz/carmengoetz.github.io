@@ -33,7 +33,7 @@ export default {
   &__item {
     position: relative;
     min-height: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     min-height: 170px;
 
     &:after,
@@ -63,7 +63,7 @@ export default {
     width: 100%;
     padding: 0 20px 0 100px;
     text-align: left;
-    padding: 0 20px 20px 100px;
+    padding: 0 20px 20px 20px;
 
     &:before {
       right: auto;
@@ -102,12 +102,11 @@ export default {
   }
 
   &__image {
-    position: absolute;
     z-index: 100;
     left: 0;
     width: 80px;
     height: 80px;
-    margin-left: 0;
+    margin: 10px auto;
     text-align: center;
     color: $dark-orchid;
     border-radius: 100%;
@@ -132,7 +131,7 @@ export default {
   .timeline {
     &__item {
       min-height: 100px;
-      margin-bottom: 100px;
+      margin-top: 50px;
     }
 
     &__panel {
@@ -143,6 +142,7 @@ export default {
     }
 
     &__image {
+      position: absolute;
       left: 50%;
       width: 100px;
       height: 100px;
