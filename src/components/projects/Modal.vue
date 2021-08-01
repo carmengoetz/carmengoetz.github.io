@@ -61,7 +61,7 @@ export default {
 .projects-modal {
   .modal-dialog {
     @media (min-width: $mobile-breakpoint) {
-      max-width: 75vw;
+      max-width: 75vw !important;
     }
   }
   .modal-content {

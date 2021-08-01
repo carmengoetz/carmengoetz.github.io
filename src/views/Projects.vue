@@ -52,6 +52,25 @@ export default {
         {
           modal: {
             id: "projectsModal1",
+            project: "Portfolio for Graphic Designer",
+            image: {
+              name: "creative-reyne.png",
+              alt: "Creative Reyne",
+            },
+            date: "Jun 2021",
+            description:
+              "A website portfolio for Creative Reyne, a graphic designer, created with Vue.js, Vue Router, Vuetify, and Vuex. This website has  2 sides to it, a side directed to clients who are content creators, and the other directed to standard business. With collaboration with Creative Reyne themselves, we were able to encapsulate their talents, give a feel for their style, and showcase what services they have available. This site can be viewed at <a href='https://www.creativereyne.ca' target='_blank'>Creative Reyne</a>, and the code can be viewed on my <a href='https://github.com/carmengoetz/CreativeReyne' target='_blank'>GitHub</a>.",
+          },
+          image: {
+            name: "creative-reyne-thumb.png",
+            alt: "Creative Reyne",
+          },
+          client: "Creative Reyne",
+          category: "Web Development",
+        },
+        {
+          modal: {
+            id: "projectsModal2",
             project: "My portfolio.",
             image: {
               name: "carmen-goetz2.png",
@@ -59,30 +78,13 @@ export default {
             },
             date: "March 2021",
             description:
-              "A website portfolio that showcased my creativity, talent and technical knowledge. Displayed on this website are some of the projects that I am proud to have worked on. This website was created using Vue.js, Vue Router and Bootstrap. I envisioned this website to express my personality and my passion for front-end web development. The logo for my website was designed and created by <a href='https://www.creativereyne.ca' target='_blank'>Creative Reyne</a>.",
+              "A website portfolio that showcased my creativity, talent and technical knowledge. Displayed on this website are some of the projects that I am proud to have worked on. This website was created using Vue.js, Vue Router and Bootstrap. I envisioned this website to express my personality and my passion for front-end web development. The code can be viewed on my <a href='https://github.com/carmengoetz/carmengoetz.github.io' target='_blank'>GitHub</a> and the logo for my website was designed and created by <a href='https://www.creativereyne.ca' target='_blank'>Creative Reyne</a>.",
           },
           image: {
             name: "carmen-goetz-thumb2.png",
             alt: "Carmen Goetz",
           },
           client: "Carmen Goetz",
-          category: "Web Development",
-        },
-        {
-          modal: {
-            id: "projectsModal2",
-            project: "Wellness Application",
-            image: { name: "refresh2.png", alt: "User Profile" },
-
-            date: "September 2017 - April 2018",
-            description:
-              "This project was created for Refresh, a local company in Saskatoon as part of a school project during my time at Saskatchewan Polytechnic. The intention of the project was a web application focusing on mental health and awareness and to create a solution that health and wellness providers can utilize to track the history of their patients.<br/><br/>When a user creates an account, each time they log on, they are asked to enter data about their mental well-being for the day. Users have the ability to add information and data about their mental wellness on the website and view their history from previous entries. They can also give friends or wellness professionals permission to view it, to see trends and to pinpoint areas that may need attention or further treatment.<br/><br/>The project was designed and developed in a group of 6 people using Symphony as part of a Final project for a class. The project was never put into production, but the source code is available in my GitHub.",
-          },
-          image: {
-            name: "refresh-thumb2.png",
-            alt: "Refresh Wellness",
-          },
-          client: "Refresh",
           category: "Web Development",
         },
         {
@@ -104,25 +106,23 @@ export default {
           client: "The Dewsletter",
           category: "Web Development",
         },
-        // Not ready to be displayed
-        // {
-        //   modal: {
-        //     id: "projectsModal4",
-        //     project: "Portfolio for Graphic and Web Designer",
-        //     image: {
-        //       name: "creative-reyne.png",
-        //       alt: "Creative Reyne",
-        //     },
-        //     date: "In Progress",
-        //     description: "",
-        //   },
-        //   image: {
-        //     name: "creative-reyne-thumb.gif",
-        //     alt: "Creative Reyne",
-        //   },
-        //   client: "Creative Reyne",
-        //   category: "Web Development",
-        // },
+        {
+          modal: {
+            id: "projectsModal4",
+            project: "Wellness Application",
+            image: { name: "refresh2.png", alt: "User Profile" },
+
+            date: "September 2017 - April 2018",
+            description:
+              "This project was created for Refresh, a local company in Saskatoon as part of a school project during my time at Saskatchewan Polytechnic. The intention of the project was a web application focusing on mental health and awareness and to create a solution that health and wellness providers can utilize to track the history of their patients.<br/><br/>When a user creates an account, each time they log on, they are asked to enter data about their mental well-being for the day. Users have the ability to add information and data about their mental wellness on the website and view their history from previous entries. They can also give friends or wellness professionals permission to view it, to see trends and to pinpoint areas that may need attention or further treatment.<br/><br/>The project was designed and developed in a group of 6 people using Symphony as part of a Final project for a class. The project was never put into production, but the source code is available in my GitHub.",
+          },
+          image: {
+            name: "refresh-thumb2.png",
+            alt: "Refresh Wellness",
+          },
+          client: "Refresh",
+          category: "Web Development",
+        },
       ],
     };
   },
