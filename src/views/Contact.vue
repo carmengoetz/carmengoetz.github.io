@@ -21,6 +21,7 @@
                   type="text"
                   placeholder="Name *"
                   required="required"
+                  v-model="form.name"
                 />
                 <p class="help-block text-danger" />
               </div>
@@ -32,6 +33,7 @@
                   type="email"
                   placeholder="Email *"
                   required="required"
+                  v-model="form.email"
                 />
                 <p class="help-block text-danger" />
               </div>
@@ -42,6 +44,7 @@
                   type="tel"
                   pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im"
                   placeholder="Phone Number"
+                  v-model="form.phone"
                 />
                 <p class="help-block text-danger" />
               </div>
@@ -53,13 +56,16 @@
                   class="form-control form-control__text"
                   placeholder="Message *"
                   required="required"
+                  v-model="form.message"
                 />
                 <p class="help-block text-danger" />
               </div>
             </div>
             <div class="clearfix" />
             <div class="col-lg-12 text-center">
-              <button class="button" type="submit">Send Message</button>
+              <button class="button" type="submit" :disabled="!formIsValid">
+                Send Message
+              </button>
             </div>
           </div>
         </form>
@@ -74,7 +80,36 @@ import emailjs from "emailjs-com";
 export default {
   name: "Contact",
   components: {},
+  data() {
+    const defaultForm = Object.freeze({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+
+    return {
+      form: Object.assign({}, defaultForm),
+      defaultForm,
+    };
+  },
+
+  computed: {
+    formIsValid() {
+      return (
+        this.form.name &&
+        this.form.email &&
+        /.+@.+/.test(this.form.email) &&
+        this.form.message
+      );
+    },
+  },
+
   methods: {
+    resetForm() {
+      this.form = Object.assign({}, this.defaultForm);
+      this.$refs.form.reset();
+    },
     sendEmail: (e) => {
       emailjs
         .sendForm(
@@ -85,9 +120,12 @@ export default {
         )
         .then(
           (result) => {
+            alert("Message Sent!");
+            this.resetForm();
             console.log("SUCCESS!", result.status, result.text);
           },
           (error) => {
+            alert("There was a problem sending your message, please try again");
             console.log("FAILED...", error);
           }
         );

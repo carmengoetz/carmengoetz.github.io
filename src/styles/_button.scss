@@ -13,6 +13,12 @@
     border: 2px solid $dark-orchid;
     transition: all 0.2s ease;
 
+    &:disabled {
+        &:active, &:focus, &:hover {
+            background-color: transparent;
+            border-color: $dark-orchid;
+        }
+    }
     &:active, &:focus, &:hover {
         background-color: $orchid;
         border-color: $orchid;
