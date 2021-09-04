@@ -12,11 +12,11 @@ module.exports = {
   pluginOptions: {
 		sitemap: {
 			urls: [
-				'https://carmengoetz.github.io/',
-				'https://carmengoetz.github.io/career',
-				'https://carmengoetz.github.io/skills',
-				'https://carmengoetz.github.io/projects',
-				'https://carmengoetz.github.io/contact',
+				'https://carmengoetz.ca/',
+				'https://carmengoetz.ca/career',
+				'https://carmengoetz.ca/skills',
+				'https://carmengoetz.ca/projects',
+				'https://carmengoetz.ca/contact',
 			]
 		}
 	},
