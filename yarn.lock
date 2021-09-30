@@ -853,14 +853,6 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@cheap-glitch/vue-cli-plugin-fontawesome@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@cheap-glitch/vue-cli-plugin-fontawesome/-/vue-cli-plugin-fontawesome-1.0.9.tgz#4e0d19f7c9b50c242a5b3d5a853efc1f23e0886e"
-  integrity sha512-/M7uWS0zv+knAS9dQ3pOaJ168J2hkv/LhmjrfIYpnFZuWbMWwVgP9YQbmM191EJ/VQXtz0TUZZoxt7nNxfSldQ==
-  dependencies:
-    ajv "^6.12.3"
-    webpack-inject-plugin "^1.5.4"
-
 "@fortawesome/fontawesome-common-types@^0.2.34":
   version "0.2.34"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.34.tgz#0a8c348bb23b7b760030f5b1d912e582be4ec915"
@@ -5631,15 +5623,6 @@ loader-utils@^2.0.0:
     emojis-list "^3.0.0"
     json5 "^2.1.2"
 
-loader-utils@~1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.2.3.tgz#1ff5dc6911c9f0a062531a4c04b609406108c2c7"
-  integrity sha512-fkpz8ejdnEMG3s37wGL07iSBDg99O9D5yflE9RGNH3hRdx9SOwYfnGYdZOUIZitN8E+E2vkq3MUMYMvPYl5ZZA==
-  dependencies:
-    big.js "^5.2.2"
-    emojis-list "^2.0.0"
-    json5 "^1.0.1"
-
 locate-path@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-3.0.0.tgz#dbec3b3ab759758071b58fe59fc41871af21400e"
@@ -9191,13 +9174,6 @@ webpack-dev-server@^3.11.0:
     webpack-log "^2.0.0"
     ws "^6.2.1"
     yargs "^13.3.2"
-
-webpack-inject-plugin@^1.5.4:
-  version "1.5.5"
-  resolved "https://registry.yarnpkg.com/webpack-inject-plugin/-/webpack-inject-plugin-1.5.5.tgz#fbecdb5cbc48e460aa8bcbdbad409933db9adca9"
-  integrity sha512-cYhj/3X6m19zmIEb/Y09/VjCf9SeL+/7Wv6YrUi/wBGFQPFMINEfzHBJV0qokeqvUwE23h8NzrTIrkHALZ9PaA==
-  dependencies:
-    loader-utils "~1.2.3"
 
 webpack-log@^2.0.0:
   version "2.0.0"
