@@ -9,7 +9,7 @@
           </h3>
         </div>
       </div>
-      <div class="row projects__items">
+      <div class="row projects__items justify-content-center">
         <Item
           v-for="item in projects"
           :key="item.index"
@@ -52,14 +52,33 @@ export default {
         {
           modal: {
             id: "projectsModal1",
+            project: "Portfolio for Artist",
+            image: {
+              name: "zachary-knuttila.png",
+              alt: "Zachary Knuttila",
+            },
+            date: "October 2021",
+            description:
+              "A website portfolio for Zachary Knuttila, a digital artist, created with Vue.js, Vue Router, and Vuetify. This site can be viewed at <a href='https://master.d6dvx9avaj25p.amplifyapp.com/' target='_blank'>Zachary Knuttila</a>, and the code can be viewed on my <a href='https://github.com/carmengoetz/zachary-knuttila' target='_blank'>GitHub</a>.",
+          },
+          image: {
+            name: "zachary-knuttila-thumb.png",
+            alt: "Zachary Knuttila",
+          },
+          client: "Zachary Knuttila",
+          category: "Web Development",
+        },
+        {
+          modal: {
+            id: "projectsModal2",
             project: "Portfolio for Graphic Designer",
             image: {
               name: "creative-reyne.png",
               alt: "Creative Reyne",
             },
-            date: "Jun 2021",
+            date: "June 2021",
             description:
-              "A website portfolio for Creative Reyne, a graphic designer, created with Vue.js, Vue Router, Vuetify, and Vuex. This website has  2 sides to it, a side directed to clients who are content creators, and the other directed to standard business. With collaboration with Creative Reyne themselves, we were able to encapsulate their talents, give a feel for their style, and showcase what services they have available. This site can be viewed at <a href='https://www.creativereyne.ca' target='_blank'>Creative Reyne</a>, and the code can be viewed on my <a href='https://github.com/carmengoetz/CreativeReyne' target='_blank'>GitHub</a>.",
+              "A website portfolio for Creative Reyne, a graphic designer, created with Vue.js, Vue Router, Vuetify, and Vuex. This website has 2 sides to it, a side directed to clients who are content creators, and the other directed to standard business. With collaboration with Creative Reyne themselves, we were able to encapsulate their talents, give a feel for their style, and showcase what services they have available. This site can be viewed at <a href='https://www.creativereyne.ca' target='_blank'>Creative Reyne</a>, and the code can be viewed on my <a href='https://github.com/carmengoetz/CreativeReyne' target='_blank'>GitHub</a>.",
           },
           image: {
             name: "creative-reyne-thumb.png",
@@ -70,7 +89,7 @@ export default {
         },
         {
           modal: {
-            id: "projectsModal2",
+            id: "projectsModal3",
             project: "My portfolio.",
             image: {
               name: "carmen-goetz2.png",
@@ -89,7 +108,7 @@ export default {
         },
         {
           modal: {
-            id: "projectsModal3",
+            id: "projectsModal4",
             project: "Portfolio for writer, artists, game designer",
             image: {
               name: "the-dewsletter.png",
@@ -108,7 +127,7 @@ export default {
         },
         {
           modal: {
-            id: "projectsModal4",
+            id: "projectsModal5",
             project: "Wellness Application",
             image: { name: "refresh2.png", alt: "User Profile" },
 
