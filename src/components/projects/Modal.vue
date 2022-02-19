@@ -32,6 +32,12 @@
                 <li>Date: {{ date }}</li>
                 <li>Client: {{ client }}</li>
                 <li>Category: {{ category }}</li>
+                <li v-if="github">
+                  GitHub: <a :href="github.link" target="_blank">{{ github.name }}</a>
+                </li>
+                <li v-if="website">
+                  Website: <a :href="website.link" target="_blank">{{ website.name }}</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -53,6 +59,8 @@ export default {
     "description",
     "category",
     "date",
+    "github",
+    "website",
   ],
 };
 </script>
@@ -121,5 +129,9 @@ export default {
   &__description {
     color: white;
   }
+}
+
+a {
+  color: $blue-jeans;
 }
 </style>
