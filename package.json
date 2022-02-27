@@ -28,7 +28,7 @@
     "sass-loader": "10.1.1",
     "ssri": "^8.0.1",
     "trim-newlines": "^4.0.2",
-    "url-parse": "^1.5.3",
+    "url-parse": "^1.5.8",
     "vue": "^3.0.0",
     "vue-cli-plugin-sitemap": "^2.3.0",
     "vue-router": "^4.0.0-0",
