@@ -27,12 +27,13 @@ export default {
   }
 
   &__description {
+    font-size: 16px;
     margin: 12px 100px;
     color: white;
 
     @media (max-width: $mobile-breakpoint) {
       margin: 12px auto;
     }
-  }
+  } 
 }
 </style>

@@ -35,7 +35,7 @@
         <a
           class="button"
           data-text="View My Resume"
-          href="./carmen-resume-v2.pdf"
+          href="./resume.pdf"
           target="_blank"
           >View My Resume</a
         >

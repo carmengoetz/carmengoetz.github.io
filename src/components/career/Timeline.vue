@@ -65,7 +65,7 @@ export default {
           heading: "Chapter Coordinator for Canada Learning Code",
           image: require("../../assets/career/CLClogo.png"),
           description:
-            "n the summer of 2019, I was presented with the opportunity to be the Coordinator for Saskatoon’s Canada Learning Code Chapter. In this position, I would streamline and run Canada learning Code educational projects and community events. In addition, I managed and promoted events on our social media accounts and networked with the community to acquire mentors, facilitators and curious new learners for upcoming events.",
+            "In the summer of 2019, I was presented with the opportunity to be the Coordinator for Saskatoon’s Canada Learning Code Chapter. In this position, I would streamline and run Canada learning Code educational projects and community events. In addition, I managed and promoted events on our social media accounts and networked with the community to acquire mentors, facilitators and curious new learners for upcoming events.",
           inverted: false,
         },
         {

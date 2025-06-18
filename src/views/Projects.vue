@@ -1,14 +1,6 @@
 <template>
   <div class="projects">
     <section>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Projects</h2>
-          <h3 class="section-subheading projects__description">
-            Projects, personal or business, completed or in progress
-          </h3>
-        </div>
-      </div>
       <div class="row projects__items justify-content-center">
         <Item
           v-for="item in projects"
@@ -68,7 +60,7 @@ export default {
             },
             website: {
               name: "Spencer Krips Music",
-              link: "https://main.d2keh6sf0oj7xn.amplifyapp.com",
+              link: "https://spencerkripsmusic.com",
             },
           },
           image: {
@@ -149,7 +141,7 @@ export default {
             },
             website: {
               name: "Carmen Goetz",
-              link: "https://creativereyne.ca",
+              link: "https://carmengoetz.ca",
             },
           },
           image: {
@@ -159,59 +151,8 @@ export default {
           client: "Carmen Goetz",
           category: "Web Development",
         },
-        {
-          modal: {
-            id: "projectsModal5",
-            project: "Portfolio for writer, artists, game designer",
-            image: {
-              name: "the-dewsletter.png",
-              alt: "The Dewsletter",
-            },
-            date: "In Progress",
-            description:
-              "This portfolio website was created for a writer, artist and game designer using WordPress. Currently in progress, is a custom WordPress theme used to display Dew’s personality to their potential clients.",
-            github: null,
-            website: null,
-          },
-          image: {
-            name: "the-dewsletter-thumb2.png",
-            alt: "The Dewsletter",
-          },
-          client: "The Dewsletter",
-          category: "Web Development",
-        },
-        {
-          modal: {
-            id: "projectsModal6",
-            project: "Wellness Application",
-            image: { name: "refresh2.png", alt: "User Profile" },
-
-            date: "September 2017 - April 2018",
-            description:
-              "This project was created for Refresh, a local company in Saskatoon as part of a school project during my time at Saskatchewan Polytechnic. The intention of the project was a web application focusing on mental health and awareness and to create a solution that health and wellness providers can utilize to track the history of their patients.<br/><br/>When a user creates an account, each time they log on, they are asked to enter data about their mental well-being for the day. Users have the ability to add information and data about their mental wellness on the website and view their history from previous entries. They can also give friends or wellness professionals permission to view it, to see trends and to pinpoint areas that may need attention or further treatment.<br/><br/>The project was designed and developed in a group of 6 people using Symphony as part of a Final project for a class. The project was never put into production, but the source code is available in my GitHub.",
-            github: {
-              name: "carmengoetz/wellness-application",
-              link: "https://github.com/carmengoetz/wellness-application",
-            },
-            website: null,
-          },
-          image: {
-            name: "refresh-thumb2.png",
-            alt: "Refresh Wellness",
-          },
-          client: "Refresh",
-          category: "Web Development",
-        },
       ],
     };
   },
 };
 </script>
-
-<style scoped lang="scss">
-.projects {
-  &__description {
-    color: $blue-jeans;
-  }
-}
-</style>

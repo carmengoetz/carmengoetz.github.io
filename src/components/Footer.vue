@@ -55,11 +55,6 @@ export default {
           icon: "linkedin-in",
         },
         {
-          name: "facebook",
-          link: "https://www.facebook.com/carmen.goetz",
-          icon: "facebook-f",
-        },
-        {
           name: "instagram",
           link: "https://www.instagram.com/carmenbgoetz",
           icon: "instagram",

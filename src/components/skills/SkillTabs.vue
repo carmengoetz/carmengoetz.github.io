@@ -6,14 +6,14 @@
           class="skills__tab glitch__skills"
           v-for="(skill, i) in skills"
           :key="`skill${i}`"
-          :val="skill.title"
+          :val="skill.index"
           :label="skill.title"
           :data-text="skill.title"
           :indicator="true"
         />
       </Tabs>
       <TabPanels v-model="selectedTab" :animate="true" :swipeable="true">
-        <TabPanel v-for="(skill, i) in skills" :key="`skill${i}`" :val="skill.title">
+        <TabPanel v-for="(skill, i) in skills" :key="`skill${i}`" :val="skill.index">
           <Skill
             :key="skills[i].title"
             :description="skills[i].description"
@@ -46,7 +46,7 @@ const skills = [
     index: 0,
     title: "Technologies",
     description:
-      "PHP, JavaScript, HTML5/CSS3, Vue 3, ReactJS, Laravel, Symphony, CakePHP, Java, C#, C, Android Studio, Xamarin, Swift, MySQL, Oracle, GoogleOAuth 2.0, Apple REST API, Google Cloud Platform, Nginx",
+      "React, Vue, Javascript, Typescript, SCSS, REST, GraphQL, PHP, Laravel, Java, C#, MySql, Elixir",
     icon: "code",
   },
   {
@@ -60,7 +60,7 @@ const skills = [
     index: 2,
     title: "Version Control",
     description:
-      "Projects using Bitbucket and GitHub. Commits are always well commented and documented.",
+      "Projects using Bitbucket and GitHub. Commits are always well commented and documented, and pull requests are always reviewed comprehensively.",
     icon: "code-branch",
   },
   {
@@ -111,8 +111,9 @@ export default {
 
     &__tab {
       font-family: $font-primary;
+      font-size: 20px;
       color: $blue-jeans;
-      padding: 10px;
+      padding: 10px 0;
       cursor: pointer;
     }
 
@@ -138,6 +139,7 @@ export default {
     border-bottom-width: 2px;
     border-style: solid;
     border-color: $blue-jeans;
+    padding-bottom: 0;
   }
 }
 </style>

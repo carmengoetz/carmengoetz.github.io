@@ -70,7 +70,6 @@ export default {
       font-size: 60px;
       font-weight: 700;
       line-height: 75px;
-      margin-bottom: 50px;
       font-family: $font-extra;
     }
 
@@ -79,5 +78,4 @@ export default {
     }
   }
 }
-/*#endregion HEADER*/
 </style>

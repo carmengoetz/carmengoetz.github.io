@@ -1,15 +1,6 @@
 <template>
   <section class="contact">
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Contact Me</h2>
-        <h3 class="section-subheading contact__description">
-          Get in touch with me for any inquiries you may have! I look forward to hearing
-          from you soon.
-        </h3>
-      </div>
-    </div>
-    <div class="row">
       <div class="col-lg-12">
         <form @submit.prevent="sendEmail">
           <div class="row">
@@ -136,11 +127,6 @@ export default {
 
 <style scoped lang="scss">
 @import "../styles/_button.scss";
-.contact {
-  &__description {
-    color: $blue-jeans;
-  }
-}
 
 .form-control {
   padding: 20px;

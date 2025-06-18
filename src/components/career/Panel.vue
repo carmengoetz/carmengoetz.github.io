@@ -131,7 +131,6 @@ export default {
   .timeline {
     &__item {
       min-height: 100px;
-      margin-top: 50px;
     }
 
     &__panel {
